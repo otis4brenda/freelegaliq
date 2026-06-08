@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Injury Settlement Calculator 2026 — Estimate Your Case Value | FreeLegalIQ</title>
+  <meta name="description" content="Estimate your personal injury settlement using the multiplier method. Enter medical bills, lost wages, injury severity, and liability percentage to get a realistic settlement range." />
+  <link rel="canonical" href="https://freelegaliq.com/personal-injury-settlement-calculator.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Personal Injury Settlement Calculator",
+      "url": "https://freelegaliq.com/personal-injury-settlement-calculator.html",
+      "description": "Estimate personal injury settlement value using the multiplier method based on medical bills, lost wages, injury severity, and liability percentage.",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How is a personal injury settlement calculated?","acceptedAnswer":{"@type":"Answer","text":"Most personal injury settlements use the multiplier method: (medical bills + future medical costs) × a multiplier of 1.5–5 based on injury severity, plus lost wages. The multiplier accounts for pain and suffering. A minor injury uses 1.5–2×; a severe injury uses 4–5×. This total is then reduced by your percentage of fault (comparative negligence)."}},
+        {"@type":"Question","name":"How long does a personal injury settlement take?","acceptedAnswer":{"@type":"Answer","text":"Most personal injury cases settle without going to trial. Minor to moderate injury cases typically resolve in 6–18 months. Severe injury cases involving significant damages or disputed liability can take 2–4 years. Cases that go to trial take considerably longer."}}
+      ]
+    }
+  ]
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227; --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280; --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 14px; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+    .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    .form-group select, .form-group input { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; color: var(--text); background: var(--bg); transition: border-color 0.2s; }
+    .form-group select:focus, .form-group input:focus { outline: none; border-color: var(--accent); background: white; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .slider-wrap { display: flex; align-items: center; gap: 12px; }
+    .slider-wrap input[type="range"] { flex: 1; accent-color: var(--accent); }
+    .slider-val { font-size: 1.1rem; font-weight: 700; color: var(--primary); min-width: 48px; }
+    .calc-btn { width: 100%; background: var(--primary); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .calc-btn:hover { background: var(--accent); color: var(--primary); }
+    .result-box { background: linear-gradient(135deg, #f0f3fa, #fdf8ec); border: 1px solid #c9a227; border-radius: var(--radius); padding: 24px; margin-top: 24px; display: none; }
+    .result-box.show { display: block; }
+    .result-range { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .result-label { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
+    .result-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .result-item { background: white; border-radius: 8px; padding: 12px; border: 1px solid var(--border); }
+    .result-item .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 4px; }
+    .result-item .value { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .quick-answer { background: #eef1f9; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; }
+    .content-section { margin-bottom: 32px; }
+    .content-section h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .content-section p { font-size: 0.93rem; line-height: 1.7; color: #374151; margin-bottom: 14px; }
+    .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--card); border: none; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text); }
+    .faq-q:hover { background: #f8f9fd; }
+    .faq-q .arrow { transition: transform 0.2s; font-size: 0.8rem; color: var(--muted); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; font-size: 0.9rem; line-height: 1.65; color: #374151; background: #f8f9fd; }
+    .faq-a.open { max-height: 400px; padding: 14px 20px 18px; }
+    .adsbygoogle { display: block; margin: 28px auto; max-width: 728px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+    .back-link:hover { text-decoration: underline; }
+    .disclaimer { background: #fff8e1; border: 1px solid #f9d54a; border-radius: 8px; padding: 12px 16px; font-size: 0.82rem; color: #6b4f00; margin-top: 16px; line-height: 1.5; }
+    footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .result-breakdown { grid-template-columns: 1fr; } .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <div class="nav-links">
+    <a href="divorce-cost-calculator.html">Divorce</a>
+    <a href="dui-cost-calculator.html">DUI</a>
+    <a href="personal-injury-settlement-calculator.html">Injury</a>
+    <a href="estate-planning-cost-calculator.html">Estate</a>
+    <a href="llc-formation-cost-calculator.html">LLC</a>
+    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="child-support-calculator.html">Child Support</a>
+    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="immigration-fee-calculator.html">Immigration</a>
+    <a href="small-claims-court-calculator.html">Small Claims</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>🏥 Personal Injury Settlement Calculator</h1>
+  <p>Estimate what your personal injury case may be worth before talking to an attorney. Know your ballpark number.</p>
+</div>
+
+<div class="container">
+  <a class="back-link" href="/">← All Legal Calculators</a>
+
+  <div class="calc-panel">
+    <h2>Personal Injury Settlement Estimator</h2>
+    <p class="subtitle">Uses the multiplier method — the most common settlement valuation approach. All calculations stay in your browser. · Updated 2026</p>
+
+    <div class="form-group">
+      <label>Injury Severity</label>
+      <select id="pi-severity">
+        <option value="minor">Minor — soft tissue, whiplash, minor sprains (multiplier 1.5–2×)</option>
+        <option value="moderate" selected>Moderate — broken bones, significant soft tissue (multiplier 2–3×)</option>
+        <option value="severe">Severe — surgery required, significant scarring, long recovery (multiplier 3–5×)</option>
+        <option value="catastrophic">Catastrophic — permanent disability, traumatic brain injury, paralysis (multiplier 5–10×)</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Medical Bills (Past & Estimated Future) ($)</label>
+        <input type="number" id="pi-medical" value="15000" placeholder="e.g. 15000" />
+      </div>
+      <div class="form-group">
+        <label>Lost Wages (Total, Due to Injury) ($)</label>
+        <input type="number" id="pi-wages" value="5000" placeholder="e.g. 5000" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>State</label>
+      <select id="pi-state">
+        <option value="avg">Average / National</option>
+        <option value="ca">California</option>
+        <option value="ny">New York</option>
+        <option value="tx">Texas</option>
+        <option value="fl">Florida</option>
+        <option value="il">Illinois</option>
+        <option value="other">Other State</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Your Estimated Liability % (your fault) — <span id="liab-display">0%</span></label>
+      <div class="slider-wrap">
+        <span>0%</span>
+        <input type="range" id="pi-liability" min="0" max="100" value="0" step="5" oninput="document.getElementById('liab-display').textContent=this.value+'%'" />
+        <span>100%</span>
+      </div>
+      <small style="color:var(--muted);font-size:0.8rem;margin-top:4px;display:block;">Most states use comparative negligence — your settlement is reduced by your % of fault. Some states (contributory negligence) bar recovery if you're any % at fault.</small>
+    </div>
+
+    <button class="calc-btn" onclick="calcPI()">Estimate My Settlement Value</button>
+
+    <div id="pi-result" class="result-box">
+      <div class="result-range" id="pi-range"></div>
+      <div class="result-label">Estimated Settlement Range (Before Attorney Fees)</div>
+      <div class="result-breakdown">
+        <div class="result-item"><div class="label">Special Damages (Economic)</div><div class="value" id="pi-special"></div></div>
+        <div class="result-item"><div class="label">Pain & Suffering (General Damages)</div><div class="value" id="pi-general"></div></div>
+        <div class="result-item"><div class="label">Gross Settlement Estimate</div><div class="value" id="pi-gross"></div></div>
+        <div class="result-item"><div class="label">After Fault Reduction</div><div class="value" id="pi-net"></div></div>
+        <div class="result-item"><div class="label">Attorney Contingency Fee (33%)</div><div class="value" id="pi-atty"></div></div>
+        <div class="result-item"><div class="label">Estimated Net to You</div><div class="value" id="pi-take-home"></div></div>
+      </div>
+      <p id="pi-advice" style="margin-top:16px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
+      <div class="disclaimer">⚠️ This is an estimate only. Actual settlement values depend on jurisdiction, specific facts, insurance policy limits, available evidence, and the skill of your attorney. Consult a personal injury attorney for your specific case — most work on contingency (no fee unless you win).</div>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="content-section">
+    <p class="quick-answer">Personal injury settlements are typically calculated using the <strong>multiplier method</strong>: add up all medical bills and lost wages (special damages), then multiply by a factor of <strong>1.5–5× based on injury severity</strong> to account for pain and suffering. The total is then reduced by any percentage of fault you bear. Most personal injury attorneys work on a contingency basis, typically taking <strong>33% of the settlement</strong>.</p>
+
+    <h3>How the Multiplier Method Works</h3>
+    <p>Insurance adjusters and personal injury attorneys both commonly use the multiplier method as a starting point for settlement negotiations. Here's how it works: First, calculate your special damages — all out-of-pocket economic losses including medical bills, future medical costs, lost wages, and property damage. Then multiply those special damages by a number from 1.5 to 5 (or higher for catastrophic injuries) to arrive at an estimate of your general damages (pain and suffering). The multiplier reflects how significantly the injury impacted your quality of life. A minor whiplash injury might use 1.5–2×; a broken leg with surgery might use 3–4×; a spinal injury with permanent disability might use 5–10×.</p>
+
+    <h3>Factors That Increase Your Settlement Value</h3>
+    <p>Strong documentation significantly increases settlement value: detailed medical records, documented lost wages, photos of the accident scene and injuries, witness statements, and a clear liability picture all strengthen your case. Having an experienced personal injury attorney negotiate on your behalf typically results in 3–4× higher settlements than unrepresented claimants receive, even after attorney fees. Insurance companies have professional adjusters whose job is to minimize payouts — having professional representation levels the playing field.</p>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How is a personal injury settlement calculated? <span class="arrow">▼</span></button>
+      <div class="faq-a">Most personal injury settlements use the multiplier method: total your economic damages (medical bills + lost wages + future costs), then multiply by 1.5–5× based on injury severity to calculate pain and suffering. This gross amount is then reduced by your percentage of fault under comparative negligence rules. Final settlement also depends on insurance policy limits — even a strong claim is limited by what the defendant's insurance will cover.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is the average personal injury settlement amount? <span class="arrow">▼</span></button>
+      <div class="faq-a">Average settlements vary enormously by injury type. Minor car accident claims (soft tissue) average $15,000–$25,000. Moderate injuries with surgery average $75,000–$200,000. Severe injuries with permanent impact settle in the range of $500,000–$2,000,000+. Wrongful death cases can reach several million dollars. These averages are very rough — actual values depend heavily on specific facts, evidence, and policy limits.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do I need a personal injury attorney? <span class="arrow">▼</span></button>
+      <div class="faq-a">For minor injuries under $5,000 with clear liability, you may be able to negotiate directly with the insurance company. For anything more significant, an attorney almost always produces better outcomes. Studies show represented claimants receive 3–4× higher settlements than unrepresented ones, even after paying the attorney's 33% contingency fee. Most personal injury attorneys offer free consultations and work entirely on contingency — you pay nothing unless you win.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does a personal injury settlement take? <span class="arrow">▼</span></button>
+      <div class="faq-a">Most personal injury cases settle without going to trial. Minor to moderate cases typically resolve in 6–18 months. Severe injury cases with disputed liability can take 2–4 years. Cases that go to trial take considerably longer — 3–5+ years in some jurisdictions. The smartest strategy is to wait until you reach Maximum Medical Improvement (MMI) before settling so all future medical costs are known.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is comparative negligence and how does it affect my settlement? <span class="arrow">▼</span></button>
+      <div class="faq-a">Comparative negligence means your settlement is reduced by the percentage of fault attributed to you. In "pure comparative negligence" states (California, New York, Florida), you can recover even if you're 99% at fault — your recovery is just reduced proportionally. In "modified comparative" states (most states), you can't recover if you're more than 50% at fault. In "contributory negligence" states (Alabama, Maryland, North Carolina, Virginia, DC), any fault on your part can completely bar recovery.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. For your specific case, consult a licensed personal injury attorney.</p>
+</footer>
+
+<script>
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+  const fmtRange = (lo, hi) => '$' + Math.round(lo).toLocaleString() + ' – $' + Math.round(hi).toLocaleString();
+
+  const multipliers = {
+    minor: { lo: 1.5, hi: 2.0 },
+    moderate: { lo: 2.0, hi: 3.0 },
+    severe: { lo: 3.0, hi: 5.0 },
+    catastrophic: { lo: 5.0, hi: 10.0 }
+  };
+  const stateMult = { avg: 1.0, ca: 1.3, ny: 1.35, tx: 0.9, fl: 1.0, il: 1.1, other: 1.0 };
+
+  function calcPI() {
+    const severity = document.getElementById('pi-severity').value;
+    const medical = +document.getElementById('pi-medical').value || 0;
+    const wages = +document.getElementById('pi-wages').value || 0;
+    const state = document.getElementById('pi-state').value;
+    const liabilityPct = +document.getElementById('pi-liability').value / 100;
+
+    const special = medical + wages;
+    const sm = stateMult[state] || 1.0;
+    const mLo = multipliers[severity].lo * sm;
+    const mHi = multipliers[severity].hi * sm;
+
+    const generalLo = special * (mLo - 1);
+    const generalHi = special * (mHi - 1);
+    const grossLo = special + generalLo;
+    const grossHi = special + generalHi;
+    const netLo = grossLo * (1 - liabilityPct);
+    const netHi = grossHi * (1 - liabilityPct);
+    const attyLo = netLo * 0.33;
+    const attyHi = netHi * 0.33;
+    const takeLo = netLo - attyLo;
+    const takeHi = netHi - attyHi;
+
+    document.getElementById('pi-range').textContent = fmtRange(netLo, netHi);
+    document.getElementById('pi-special').textContent = fmt(special);
+    document.getElementById('pi-general').textContent = fmtRange(generalLo, generalHi);
+    document.getElementById('pi-gross').textContent = fmtRange(grossLo, grossHi);
+    document.getElementById('pi-net').textContent = liabilityPct > 0 ? fmtRange(netLo, netHi) + ` (reduced ${Math.round(liabilityPct*100)}%)` : fmtRange(netLo, netHi);
+    document.getElementById('pi-atty').textContent = fmtRange(attyLo, attyHi);
+    document.getElementById('pi-take-home').textContent = fmtRange(takeLo, takeHi);
+
+    let advice = '';
+    if (liabilityPct > 0.5) {
+      advice = '⚠️ With over 50% fault, recovery may be barred in some states (modified comparative negligence states). An attorney can help you understand your state\'s rules and maximize any recovery available.';
+    } else if (netHi > 50000) {
+      advice = `💡 With a potential settlement of ${fmtRange(netLo, netHi)}, an experienced personal injury attorney on contingency will almost certainly net you more than going unrepresented, even after their 33% fee.`;
+    } else {
+      advice = `💡 For moderate claims, always request a free consultation from 2–3 personal injury attorneys before settling directly with an insurer. Initial settlements offered by insurance adjusters are typically 40–60% lower than fair value.`;
+    }
+    document.getElementById('pi-advice').textContent = advice;
+    document.getElementById('pi-result').classList.add('show');
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+</script>
+</body>
+</html>

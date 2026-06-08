@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Support Calculator 2026 — Estimate Monthly Payment | FreeLegalIQ</title>
+  <meta name="description" content="Estimate monthly child support payments using the income shares model — the most common formula used in US states. Free 2026 calculator by state, custody, and income." />
+  <link rel="canonical" href="https://freelegaliq.com/child-support-calculator.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Child Support Calculator",
+    "url": "https://freelegaliq.com/child-support-calculator.html",
+    "description": "Estimate monthly child support payments using the income shares model based on custody arrangement, both parents' incomes, and number of children.",
+    "applicationCategory": "LegalApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227; --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280; --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 14px; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+    .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    .form-group select, .form-group input { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; color: var(--text); background: var(--bg); transition: border-color 0.2s; }
+    .form-group select:focus, .form-group input:focus { outline: none; border-color: var(--accent); background: white; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-group label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 500; cursor: pointer; padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: all 0.2s; }
+    .radio-group label:hover { border-color: var(--accent); }
+    .radio-group input[type="radio"] { accent-color: var(--accent); }
+    .calc-btn { width: 100%; background: var(--primary); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .calc-btn:hover { background: var(--accent); color: var(--primary); }
+    .result-box { background: linear-gradient(135deg, #f0f3fa, #fdf8ec); border: 1px solid #c9a227; border-radius: var(--radius); padding: 24px; margin-top: 24px; display: none; }
+    .result-box.show { display: block; }
+    .result-main { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .result-label { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
+    .result-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .result-item { background: white; border-radius: 8px; padding: 12px; border: 1px solid var(--border); }
+    .result-item .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 4px; }
+    .result-item .value { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .quick-answer { background: #eef1f9; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; }
+    .content-section { margin-bottom: 32px; }
+    .content-section h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .content-section p { font-size: 0.93rem; line-height: 1.7; color: #374151; margin-bottom: 14px; }
+    .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--card); border: none; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text); }
+    .faq-q:hover { background: #f8f9fd; }
+    .faq-q .arrow { transition: transform 0.2s; font-size: 0.8rem; color: var(--muted); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; font-size: 0.9rem; line-height: 1.65; color: #374151; background: #f8f9fd; }
+    .faq-a.open { max-height: 400px; padding: 14px 20px 18px; }
+    .adsbygoogle { display: block; margin: 28px auto; max-width: 728px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+    .back-link:hover { text-decoration: underline; }
+    .disclaimer { background: #fff8e1; border: 1px solid #f9d54a; border-radius: 8px; padding: 12px 16px; font-size: 0.82rem; color: #6b4f00; margin-top: 16px; line-height: 1.5; }
+    footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .result-breakdown { grid-template-columns: 1fr; } .nav-links { display: none; } .radio-group { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <div class="nav-links">
+    <a href="divorce-cost-calculator.html">Divorce</a>
+    <a href="dui-cost-calculator.html">DUI</a>
+    <a href="personal-injury-settlement-calculator.html">Injury</a>
+    <a href="estate-planning-cost-calculator.html">Estate</a>
+    <a href="llc-formation-cost-calculator.html">LLC</a>
+    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="child-support-calculator.html">Child Support</a>
+    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="immigration-fee-calculator.html">Immigration</a>
+    <a href="small-claims-court-calculator.html">Small Claims</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>👨‍👧 Child Support Calculator</h1>
+  <p>Estimate monthly child support using the income shares model — the formula used by most US states.</p>
+</div>
+
+<div class="container">
+  <a class="back-link" href="/">← All Legal Calculators</a>
+
+  <div class="calc-panel">
+    <h2>Child Support Estimator</h2>
+    <p class="subtitle">Uses the income shares model. Results are estimates — courts apply state-specific guidelines. All calculations stay in your browser. · Updated 2026</p>
+
+    <div class="form-group">
+      <label>State</label>
+      <select id="cs-state">
+        <option value="avg">Average / Income Shares Model</option>
+        <option value="ca">California (Guideline Formula)</option>
+        <option value="tx">Texas (% of Income Model)</option>
+        <option value="fl">Florida (Income Shares)</option>
+        <option value="ny">New York (% of Income)</option>
+        <option value="il">Illinois (% of Net Income)</option>
+        <option value="ga">Georgia (Income Shares)</option>
+        <option value="nc">North Carolina (Income Shares)</option>
+        <option value="oh">Ohio (Income Shares)</option>
+        <option value="wa">Washington (Income Shares)</option>
+        <option value="other">Other State (Income Shares)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Custody Arrangement</label>
+      <div class="radio-group">
+        <label><input type="radio" name="cs-custody" value="primary" checked /> Primary (one parent has child 70%+ of time)</label>
+        <label><input type="radio" name="cs-custody" value="shared" /> Shared / Joint (40–60% each)</label>
+        <label><input type="radio" name="cs-custody" value="split" /> Split (children split between parents)</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Paying Parent Monthly Gross Income ($)</label>
+        <input type="number" id="cs-payer" value="5000" placeholder="e.g. 5000" />
+      </div>
+      <div class="form-group">
+        <label>Receiving Parent Monthly Gross Income ($)</label>
+        <input type="number" id="cs-payee" value="3000" placeholder="e.g. 3000" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Number of Children</label>
+      <select id="cs-children">
+        <option value="1">1 child</option>
+        <option value="2" selected>2 children</option>
+        <option value="3">3 children</option>
+        <option value="4">4 children</option>
+        <option value="5">5+ children</option>
+      </select>
+    </div>
+
+    <button class="calc-btn" onclick="calcChildSupport()">Estimate Monthly Child Support</button>
+
+    <div id="cs-result" class="result-box">
+      <div class="result-main" id="cs-amount"></div>
+      <div class="result-label">Estimated Monthly Child Support Payment</div>
+      <div class="result-breakdown">
+        <div class="result-item"><div class="label">Combined Parental Income</div><div class="value" id="cs-combined"></div></div>
+        <div class="result-item"><div class="label">Basic Child Support Obligation</div><div class="value" id="cs-basic"></div></div>
+        <div class="result-item"><div class="label">Paying Parent's Income Share</div><div class="value" id="cs-payer-pct"></div></div>
+        <div class="result-item"><div class="label">Custody Adjustment Applied</div><div class="value" id="cs-custody-adj"></div></div>
+      </div>
+      <p id="cs-state-note" style="margin-top:14px; font-size:0.88rem; font-weight:600; color:var(--primary);"></p>
+      <p id="cs-advice" style="margin-top:8px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
+      <div class="disclaimer">⚠️ <strong>Important:</strong> Child support formulas vary significantly by state. This calculator provides an estimate using the income shares model. Courts may deviate based on healthcare costs, childcare costs, extraordinary expenses, and other factors. Only a court order is legally binding. Consult a family law attorney for your state's specific guidelines.</div>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="content-section">
+    <p class="quick-answer">Most US states use the <strong>income shares model</strong> for child support — it calculates a base obligation from both parents' combined income, then allocates it proportionally to each parent's share of that income. The paying parent typically pays <strong>17–25% of their net income</strong> for one child, scaling up for additional children. States like Texas and New York use a simpler percentage-of-income model.</p>
+
+    <h3>How Child Support Is Calculated</h3>
+    <p>In income shares states, the process is: (1) Add both parents' gross (or net, depending on state) monthly incomes; (2) Look up the basic child support obligation for that combined income and number of children in state guidelines tables; (3) Calculate each parent's percentage share of combined income; (4) The paying parent's share of the basic obligation is their base child support payment; (5) Adjustments are made for health insurance costs, childcare, extraordinary medical expenses, and custody time (with significant custody time often reducing the payment).</p>
+
+    <h3>What Can Modify a Child Support Order?</h3>
+    <p>Child support orders can be modified when there is a "substantial change in circumstances" — typically a change in income of 15–20% or more, a change in custody arrangement, a change in the child's needs, or one parent becoming unemployed. Either parent can petition the court for modification. Many states have automatic review processes every few years. Note: private agreements between parents to pay less than the court order are not enforceable — only a new court order can change the obligation.</p>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How is child support calculated? <span class="arrow">▼</span></button>
+      <div class="faq-a">The most common method is the income shares model (used in ~40 states): both parents' incomes are combined, a basic support obligation is determined from state guideline tables, and each parent contributes proportionally. The paying parent pays their share to the receiving parent. Texas and New York use a simpler percentage-of-income model: Texas pays 20% of net income for 1 child, 25% for 2, 30% for 3, etc. California uses an algebraic formula that accounts for custody time and net disposable income.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Does 50/50 custody mean no child support? <span class="arrow">▼</span></button>
+      <div class="faq-a">Not necessarily. With true 50/50 shared custody, child support is reduced significantly because both parents share physical custody costs directly. However, if there's a significant income disparity between parents, the higher-earning parent typically still pays some child support to equalize the children's standard of living between both households. The specific amount depends on your state's formula and the income difference between parents.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does child support last? <span class="arrow">▼</span></button>
+      <div class="faq-a">Child support typically ends when a child turns 18, or 19 if the child is still in high school. Some states extend support to age 21 or through college if ordered by the court. Support can end earlier if the child is legally emancipated (married, self-supporting, joins the military). Child support does not automatically end — you may need to formally request termination through the court when your child reaches the cutoff age, especially if payments are being withheld from your paycheck.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What happens if a parent doesn't pay child support? <span class="arrow">▼</span></button>
+      <div class="faq-a">Non-payment of child support has serious consequences: wage garnishment (up to 50–65% of disposable income), bank account levies, tax refund interception, professional license suspension, driver's license suspension, passport denial, and contempt of court charges (including jail in serious cases). Child support enforcement agencies in every state actively pursue non-paying parents. Unpaid child support accrues as a judgment debt with interest in most states.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can child support be modified? <span class="arrow">▼</span></button>
+      <div class="faq-a">Yes, either parent can petition for modification when there is a "substantial change in circumstances." Most states define this as an income change of 15–20% or more, a custody change, job loss, disability, or a change in the child's needs. The modification is not retroactive — it only applies from the date of the new order, not from when circumstances changed. Don't simply stop paying — continue paying the existing order until a new court order is in place, or you'll owe arrears.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Child support is determined by court order. Consult a family law attorney in your state.</p>
+</footer>
+
+<script>
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+
+  // Income shares basic obligation table (approx % of combined income)
+  // [1 child, 2 children, 3 children, 4 children, 5+ children]
+  const incomeSharePcts = [0.17, 0.25, 0.29, 0.31, 0.35];
+
+  const stateNotes = {
+    avg: 'Income shares model estimate. Verify with your state\'s official child support guidelines.',
+    ca: 'California uses a complex algebraic formula (CA Guideline). This is an approximation — use the official DissoMaster or Xspouse calculator for exact figures.',
+    tx: 'Texas uses a flat percentage of net income: 20% (1 child), 25% (2), 30% (3), 35% (4), 40% (5+). This estimate uses that model adjusted for custody.',
+    fl: 'Florida uses income shares with adjustments for overnight visits. An attorney can run the official Florida Child Support Guidelines Worksheet.',
+    ny: 'New York uses the CSSA formula: 17% of combined income for 1 child, 25% for 2, 29% for 3, 31% for 4, at least 35% for 5+.',
+    il: 'Illinois uses a percentage of net income model. Verify with the Illinois Department of Healthcare and Family Services calculator.',
+    ga: 'Georgia uses income shares. The official Georgia Child Support Worksheet provides exact calculations.',
+    nc: 'North Carolina uses income shares. Use the NC Child Support Guidelines Worksheets for precise figures.',
+    oh: 'Ohio uses income shares. The Ohio Child Support Payment Calculator is available through the Ohio DJFS.',
+    wa: 'Washington uses income shares with economic table adjustments. The Washington State Child Support Schedule is available from courts.',
+    other: 'Income shares model estimate. Check your state court\'s website for an official calculator.'
+  };
+
+  function calcChildSupport() {
+    const state = document.getElementById('cs-state').value;
+    const custody = document.querySelector('input[name="cs-custody"]:checked').value;
+    const payerIncome = +document.getElementById('cs-payer').value || 0;
+    const payeeIncome = +document.getElementById('cs-payee').value || 0;
+    const numChildren = +document.getElementById('cs-children').value || 1;
+
+    const combined = payerIncome + payeeIncome;
+    const childIdx = Math.min(numChildren - 1, 4);
+    let basePct = incomeSharePcts[childIdx];
+
+    // Texas special model
+    const txPcts = [0.20, 0.25, 0.30, 0.35, 0.40];
+    if (state === 'tx') basePct = txPcts[childIdx];
+
+    const basicObligation = combined * basePct;
+    const payerShare = combined > 0 ? payerIncome / combined : 0.5;
+
+    let payerContribution = basicObligation * payerShare;
+
+    // Custody adjustments
+    let custodyAdj = '';
+    if (custody === 'shared') {
+      payerContribution *= 0.65; // shared custody reduces by ~35%
+      custodyAdj = '~35% reduction for shared custody';
+    } else if (custody === 'split') {
+      payerContribution *= 0.50;
+      custodyAdj = '~50% reduction for split custody';
+    } else {
+      custodyAdj = 'Standard (primary custody — no reduction)';
+    }
+
+    document.getElementById('cs-amount').textContent = fmt(payerContribution) + '/mo';
+    document.getElementById('cs-combined').textContent = fmt(combined) + '/mo';
+    document.getElementById('cs-basic').textContent = fmt(basicObligation) + '/mo';
+    document.getElementById('cs-payer-pct').textContent = Math.round(payerShare * 100) + '%';
+    document.getElementById('cs-custody-adj').textContent = custodyAdj;
+    document.getElementById('cs-state-note').textContent = '📍 ' + (stateNotes[state] || stateNotes.other);
+
+    let advice = '';
+    if (payerContribution < 100) {
+      advice = '💡 Very low support amount — courts may set a minimum support order regardless of income. Many states have minimum monthly obligations of $50–$100 even for very low incomes.';
+    } else if (payerContribution > 2000) {
+      advice = '💡 High-income child support calculations are more complex and may involve cap/floor provisions. An attorney experienced in high-income cases can ensure you\'re applying the formula correctly.';
+    } else {
+      advice = `💡 This is an estimate only. Healthcare premiums, childcare costs, and extraordinary expenses typically add to this base amount. Courts also consider the actual cost of raising children in your area.`;
+    }
+    document.getElementById('cs-advice').textContent = advice;
+    document.getElementById('cs-result').classList.add('show');
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+</script>
+</body>
+</html>

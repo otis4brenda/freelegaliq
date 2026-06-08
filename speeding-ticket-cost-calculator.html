@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speeding Ticket Cost Calculator 2026 — True Total Cost | FreeLegalIQ</title>
+  <meta name="description" content="Calculate the true total cost of a speeding ticket — base fine, court fees, traffic school, and the often-hidden 3-year insurance rate increase." />
+  <link rel="canonical" href="https://freelegaliq.com/speeding-ticket-cost-calculator.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Speeding Ticket Cost Calculator",
+    "url": "https://freelegaliq.com/speeding-ticket-cost-calculator.html",
+    "description": "Calculate the true total cost of a speeding ticket including fine, court fees, traffic school, and 3-year insurance rate increase.",
+    "applicationCategory": "LegalApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227; --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280; --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 14px; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+    .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    .form-group select, .form-group input { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; color: var(--text); background: var(--bg); transition: border-color 0.2s; }
+    .form-group select:focus, .form-group input:focus { outline: none; border-color: var(--accent); background: white; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-group label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 500; cursor: pointer; padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: all 0.2s; }
+    .radio-group label:hover { border-color: var(--accent); }
+    .radio-group input[type="radio"] { accent-color: var(--accent); }
+    .calc-btn { width: 100%; background: var(--primary); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .calc-btn:hover { background: var(--accent); color: var(--primary); }
+    .result-box { background: linear-gradient(135deg, #f0f3fa, #fdf8ec); border: 1px solid #c9a227; border-radius: var(--radius); padding: 24px; margin-top: 24px; display: none; }
+    .result-box.show { display: block; }
+    .result-total { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .result-label { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
+    .result-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .result-item { background: white; border-radius: 8px; padding: 12px; border: 1px solid var(--border); }
+    .result-item.highlight { border-color: var(--accent); background: #fdf8ec; }
+    .result-item .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 4px; }
+    .result-item .value { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .quick-answer { background: #eef1f9; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; }
+    .content-section { margin-bottom: 32px; }
+    .content-section h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .content-section p { font-size: 0.93rem; line-height: 1.7; color: #374151; margin-bottom: 14px; }
+    .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--card); border: none; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text); }
+    .faq-q:hover { background: #f8f9fd; }
+    .faq-q .arrow { transition: transform 0.2s; font-size: 0.8rem; color: var(--muted); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; font-size: 0.9rem; line-height: 1.65; color: #374151; background: #f8f9fd; }
+    .faq-a.open { max-height: 400px; padding: 14px 20px 18px; }
+    .adsbygoogle { display: block; margin: 28px auto; max-width: 728px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+    .back-link:hover { text-decoration: underline; }
+    footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .result-breakdown { grid-template-columns: 1fr; } .nav-links { display: none; } .radio-group { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <div class="nav-links">
+    <a href="divorce-cost-calculator.html">Divorce</a>
+    <a href="dui-cost-calculator.html">DUI</a>
+    <a href="personal-injury-settlement-calculator.html">Injury</a>
+    <a href="estate-planning-cost-calculator.html">Estate</a>
+    <a href="llc-formation-cost-calculator.html">LLC</a>
+    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="child-support-calculator.html">Child Support</a>
+    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="immigration-fee-calculator.html">Immigration</a>
+    <a href="small-claims-court-calculator.html">Small Claims</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>🚗 Speeding Ticket Cost Calculator</h1>
+  <p>A speeding ticket costs far more than the fine. See your true 3-year total — including the insurance hit.</p>
+</div>
+
+<div class="container">
+  <a class="back-link" href="/">← All Legal Calculators</a>
+
+  <div class="calc-panel">
+    <h2>Speeding Ticket True Cost Estimator</h2>
+    <p class="subtitle">All calculations stay in your browser. · Updated 2026</p>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>State</label>
+        <select id="st-state">
+          <option value="avg">Average / National</option>
+          <option value="ca">California (high fines)</option>
+          <option value="tx">Texas</option>
+          <option value="fl">Florida</option>
+          <option value="ny">New York (high fines)</option>
+          <option value="il">Illinois</option>
+          <option value="ga">Georgia</option>
+          <option value="az">Arizona</option>
+          <option value="nc">North Carolina</option>
+          <option value="co">Colorado</option>
+          <option value="va">Virginia</option>
+          <option value="nv">Nevada</option>
+          <option value="other">Other State</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Speed Over the Limit</label>
+        <select id="st-speed">
+          <option value="1to10">1–10 mph over (minor)</option>
+          <option value="11to20" selected>11–20 mph over (moderate)</option>
+          <option value="21to30">21–30 mph over (serious)</option>
+          <option value="30plus">30+ mph over (major / reckless risk)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>School or Construction Zone?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="st-zone" value="no" checked /> No</label>
+          <label><input type="radio" name="st-zone" value="yes" /> Yes (fines doubled)</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Commercial Vehicle?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="st-cdl" value="no" checked /> No</label>
+          <label><input type="radio" name="st-cdl" value="yes" /> Yes (CDL holder)</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Plan to Fight the Ticket?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="st-fight" value="no" checked /> No — pay or take traffic school</label>
+        <label><input type="radio" name="st-fight" value="yes" /> Yes — hire a traffic attorney</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Current Annual Auto Insurance Premium ($)</label>
+      <input type="number" id="st-insurance" value="1500" placeholder="e.g. 1500" />
+    </div>
+
+    <button class="calc-btn" onclick="calcTicket()">Calculate My True Ticket Cost</button>
+
+    <div id="st-result" class="result-box">
+      <div class="result-total" id="st-total"></div>
+      <div class="result-label">Estimated True Total Cost (3 Years)</div>
+      <div class="result-breakdown">
+        <div class="result-item"><div class="label">Base Fine + Court Fees</div><div class="value" id="st-fine"></div></div>
+        <div class="result-item"><div class="label">Traffic School (if taken)</div><div class="value" id="st-school"></div></div>
+        <div class="result-item"><div class="label">Traffic Attorney (if hired)</div><div class="value" id="st-atty"></div></div>
+        <div class="result-item highlight"><div class="label">⚠️ Insurance Increase (3 yrs)</div><div class="value" id="st-ins-hit"></div></div>
+      </div>
+      <p id="st-advice" style="margin-top:16px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="content-section">
+    <p class="quick-answer">The base fine for a speeding ticket is typically <strong>$150–$500</strong> depending on speed and state — but court fees and surcharges often double that. The real cost is the <strong>3-year insurance impact</strong>: a ticket for going 16–29mph over the limit raises premiums by ~20% for 3 years. On a $1,500/year policy, that's <strong>$900 in extra premiums</strong> — often more than the ticket itself.</p>
+
+    <h3>The Hidden Insurance Cost of Speeding Tickets</h3>
+    <p>Most drivers focus on the ticket fine and ignore the much larger insurance impact. Here's how it works: after a ticket, insurers classify you as higher risk at your next renewal and raise your premium by 10–30% depending on severity. A minor ticket (1–10mph over) raises rates by roughly 10–15% for 1–3 years. A moderate ticket (11–20mph) raises rates by 15–25% for 3 years. A serious speeding violation (21–30mph) raises rates by 25–40% for 3–5 years. In some states, a 30+ mph over ticket can result in license suspension and create a 50%+ rate increase if the insurer doesn't cancel you outright.</p>
+
+    <h3>Should You Fight a Speeding Ticket?</h3>
+    <p>For tickets over $300 or in states with heavy point systems, hiring a traffic attorney ($150–$400) is often worth it. Traffic attorneys specialize in getting tickets dismissed, reduced to non-moving violations, or negotiated to keep points off your record. Keeping the ticket off your record saves the insurance increase — which is almost always worth more than the attorney fee. At minimum, consider traffic school (where available) — completing traffic school typically masks the ticket from your insurance company for that renewal cycle in most states.</p>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How much does a speeding ticket cost? <span class="arrow">▼</span></button>
+      <div class="faq-a">The base fine for a typical speeding ticket ranges from $50–$300 depending on speed and state, but court fees, assessments, and surcharges typically add 50–200% on top of the base fine. California, for example, charges a base fine of $35 for going 1–15mph over, but after all fees and assessments, the actual payment is $230–$500+. Over 3 years including insurance increases, the total cost of a single moderate speeding ticket commonly runs $800–$2,500.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does a speeding ticket affect your insurance? <span class="arrow">▼</span></button>
+      <div class="faq-a">Most speeding tickets affect your insurance rates for 3 years from the conviction date (not the ticket date). Serious violations — like reckless driving or excessive speeding (30+ mph over) — can affect rates for 5–7 years. The impact is greatest at your first renewal after the ticket appears on your driving record. By year 3–4, most minor violations drop off and rates normalize, assuming no additional violations.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I go to traffic school to avoid points? <span class="arrow">▼</span></button>
+      <div class="faq-a">In most states, traffic school (defensive driving course) is available for minor violations (typically under 25mph over, no accidents). Completing traffic school typically: (1) masks the ticket from your insurance company for that policy period, (2) removes points from your driving record, or (3) results in case dismissal. Online traffic school courses typically cost $15–$100 and take 4–8 hours. Availability and rules vary by state — check with your state DMV or court for eligibility.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is it worth hiring an attorney for a speeding ticket? <span class="arrow">▼</span></button>
+      <div class="faq-a">For minor tickets (under $200 fine, 1–10mph over), probably not — traffic school is cheaper. For tickets involving significant speed (21+ over), commercial vehicle violations, or if you already have points on your record, a traffic attorney ($150–$400) is often worth it. Attorneys specialize in getting tickets reduced to non-moving violations (no points, no insurance impact) or dismissed entirely. The insurance savings alone often justify the attorney fee — a 20% rate increase on a $1,800/year policy saves $1,080 over 3 years.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What happens if I don't pay a speeding ticket? <span class="arrow">▼</span></button>
+      <div class="faq-a">Ignoring a speeding ticket has serious consequences: late fees and penalties (often double or triple the original fine), a failure-to-appear warrant issued for your arrest, driver's license suspension, and hold on vehicle registration renewal. In some states, your car can be impounded if pulled over on a suspended license. A unpaid ticket doesn't disappear — it becomes a growing problem. If you can't afford the fine, most courts offer payment plans or community service alternatives. Contact the court before the due date.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Actual fines and insurance impacts vary by state, insurer, and driving record. Consult a licensed attorney for your specific situation.</p>
+</footer>
+
+<script>
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+  const fmtRange = (lo, hi) => '$' + Math.round(lo).toLocaleString() + ' – $' + Math.round(hi).toLocaleString();
+
+  const stateMult = { avg:1.0, ca:2.2, tx:1.2, fl:1.3, ny:1.8, il:1.3, ga:1.1, az:1.1, nc:1.0, co:1.1, va:1.4, nv:1.5, other:1.0 };
+  const speedFines = { '1to10': 100, '11to20': 200, '21to30': 350, '30plus': 600 };
+  const insIncrease = { '1to10': 0.10, '11to20': 0.20, '21to30': 0.35, '30plus': 0.55 };
+
+  function calcTicket() {
+    const state = document.getElementById('st-state').value;
+    const speed = document.getElementById('st-speed').value;
+    const zone = document.querySelector('input[name="st-zone"]:checked').value;
+    const cdl = document.querySelector('input[name="st-cdl"]:checked').value;
+    const fight = document.querySelector('input[name="st-fight"]:checked').value;
+    const annualIns = +document.getElementById('st-insurance').value || 1500;
+
+    const mult = stateMult[state] || 1.0;
+    let baseFine = speedFines[speed] * mult;
+    if (zone === 'yes') baseFine *= 2;
+    if (cdl === 'yes') baseFine *= 1.3;
+
+    const schoolCost = fight === 'no' ? 75 : 0;
+    const attyFee = fight === 'yes' ? 250 : 0;
+
+    const insPct = insIncrease[speed];
+    const insHit = annualIns * insPct * 3;
+
+    const total = baseFine + schoolCost + attyFee + insHit;
+
+    document.getElementById('st-total').textContent = fmt(total) + ' (3-year total)';
+    document.getElementById('st-fine').textContent = fmt(baseFine);
+    document.getElementById('st-school').textContent = fight === 'no' ? '$50–$100 (if available)' : 'N/A';
+    document.getElementById('st-atty').textContent = fight === 'yes' ? '$150–$400' : 'None';
+    document.getElementById('st-ins-hit').textContent = fmt(insHit) + ' (' + Math.round(insPct*100) + '% × 3 yrs)';
+
+    let advice = '';
+    if (speed === '30plus') {
+      advice = `⚠️ Speeds 30+ mph over the limit risk reckless driving charges in many states, which carries major consequences. Consult a traffic attorney immediately — this isn't a simple ticket situation.`;
+    } else if (fight === 'yes') {
+      advice = `💡 Good call — a traffic attorney typically costs $150–$400 and specializes in getting violations reduced to non-moving offenses (no points, no insurance impact). That saves you the ${fmt(insHit)} insurance hit, making the attorney fee well worth it.`;
+    } else if (insHit > baseFine * 2) {
+      advice = `💡 The insurance increase (${fmt(insHit)}) is larger than your fine. Consider traffic school to mask the ticket from your insurer — or consult a traffic attorney before paying the ticket.`;
+    } else {
+      advice = `💡 Traffic school (where available) is your best option to prevent the insurance rate increase. Complete it before your next policy renewal.`;
+    }
+    document.getElementById('st-advice').textContent = advice;
+    document.getElementById('st-result').classList.add('show');
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+</script>
+</body>
+</html>

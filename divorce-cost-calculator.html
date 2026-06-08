@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divorce Cost Calculator 2026 — How Much Does a Divorce Cost? | FreeLegalIQ</title>
+  <meta name="description" content="Estimate your total divorce costs by state in 2026. Contested vs uncontested, children, shared assets, and attorney fees — free calculator, no email required." />
+  <link rel="canonical" href="https://freelegaliq.com/divorce-cost-calculator.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Divorce Cost Calculator",
+      "url": "https://freelegaliq.com/divorce-cost-calculator.html",
+      "description": "Free calculator to estimate total divorce costs by state — contested vs. uncontested, with children, shared assets, and attorney fees.",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How much does a divorce cost on average?","acceptedAnswer":{"@type":"Answer","text":"The average contested divorce in the US costs $15,000–$30,000 per spouse. An uncontested divorce where both parties agree on everything typically costs $1,500–$5,000 total including filing fees and basic legal help."}},
+        {"@type":"Question","name":"What is the cheapest way to get divorced?","acceptedAnswer":{"@type":"Answer","text":"An uncontested divorce — where both spouses agree on all terms — is the least expensive path. Using a mediator instead of two attorneys, or a divorce document preparation service, can keep total costs under $2,000 in many states."}},
+        {"@type":"Question","name":"How long does a divorce take?","acceptedAnswer":{"@type":"Answer","text":"Most states have a mandatory waiting period of 30–90 days from filing to finalization. Uncontested divorces often complete in 3–6 months; contested divorces can take 1–3 years when issues go to trial."}}
+      ]
+    }
+  ]
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227;
+      --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280;
+      --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08);
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+    .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    .form-group select, .form-group input { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; color: var(--text); background: var(--bg); transition: border-color 0.2s; }
+    .form-group select:focus, .form-group input:focus { outline: none; border-color: var(--accent); background: white; }
+    .radio-group { display: flex; gap: 16px; flex-wrap: wrap; }
+    .radio-group label { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 500; cursor: pointer; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: all 0.2s; }
+    .radio-group label:hover { border-color: var(--accent); }
+    .radio-group input[type="radio"] { accent-color: var(--accent); width: 16px; height: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .calc-btn { width: 100%; background: var(--primary); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .calc-btn:hover { background: var(--accent); color: var(--primary); }
+    .result-box { background: linear-gradient(135deg, #f0f3fa, #fdf8ec); border: 1px solid #c9a227; border-radius: var(--radius); padding: 24px; margin-top: 24px; display: none; }
+    .result-box.show { display: block; }
+    .result-range { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .result-label { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
+    .result-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .result-item { background: white; border-radius: 8px; padding: 12px; border: 1px solid var(--border); }
+    .result-item .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 4px; }
+    .result-item .value { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .quick-answer { background: #eef1f9; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; color: var(--text); }
+    .content-section { margin-bottom: 32px; }
+    .content-section h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .content-section p { font-size: 0.93rem; line-height: 1.7; color: #374151; margin-bottom: 14px; }
+    .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--card); border: none; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text); }
+    .faq-q:hover { background: #f8f9fd; }
+    .faq-q .arrow { transition: transform 0.2s; font-size: 0.8rem; color: var(--muted); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; font-size: 0.9rem; line-height: 1.65; color: #374151; background: #f8f9fd; }
+    .faq-a.open { max-height: 400px; padding: 14px 20px 18px; }
+    .adsbygoogle { display: block; margin: 28px auto; max-width: 728px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+    .back-link:hover { text-decoration: underline; }
+    .disclaimer { background: #fff8e1; border: 1px solid #f9d54a; border-radius: 8px; padding: 12px 16px; font-size: 0.82rem; color: #6b4f00; margin-top: 16px; line-height: 1.5; }
+    footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .result-breakdown { grid-template-columns: 1fr; } .nav-links { display: none; } .radio-group { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <div class="nav-links">
+    <a href="divorce-cost-calculator.html">Divorce</a>
+    <a href="dui-cost-calculator.html">DUI</a>
+    <a href="personal-injury-settlement-calculator.html">Injury</a>
+    <a href="estate-planning-cost-calculator.html">Estate</a>
+    <a href="llc-formation-cost-calculator.html">LLC</a>
+    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="child-support-calculator.html">Child Support</a>
+    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="immigration-fee-calculator.html">Immigration</a>
+    <a href="small-claims-court-calculator.html">Small Claims</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>💔 Divorce Cost Calculator</h1>
+  <p>Estimate your total divorce costs by state — contested or uncontested. Know what you're facing before you call an attorney.</p>
+</div>
+
+<div class="container">
+  <a class="back-link" href="/">← All Legal Calculators</a>
+
+  <div class="calc-panel">
+    <h2>Divorce Cost Estimator</h2>
+    <p class="subtitle">All calculations stay in your browser — nothing is sent or stored. · Updated 2026</p>
+
+    <div class="form-group">
+      <label>State</label>
+      <select id="div-state">
+        <option value="avg">Average / National</option>
+        <option value="ca">California</option>
+        <option value="tx">Texas</option>
+        <option value="fl">Florida</option>
+        <option value="ny">New York</option>
+        <option value="il">Illinois</option>
+        <option value="pa">Pennsylvania</option>
+        <option value="oh">Ohio</option>
+        <option value="ga">Georgia</option>
+        <option value="nc">North Carolina</option>
+        <option value="wa">Washington</option>
+        <option value="az">Arizona</option>
+        <option value="co">Colorado</option>
+        <option value="or">Oregon</option>
+        <option value="nv">Nevada</option>
+        <option value="wy">Wyoming</option>
+        <option value="other">Other State</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Divorce Type</label>
+      <div class="radio-group">
+        <label><input type="radio" name="div-type" value="uncontested" checked /> Uncontested (both agree)</label>
+        <label><input type="radio" name="div-type" value="contested" /> Contested (disputes exist)</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Children Involved?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="div-children" value="no" checked /> No</label>
+          <label><input type="radio" name="div-children" value="yes" /> Yes</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Shared Assets to Divide?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="div-assets" value="no" checked /> No</label>
+          <label><input type="radio" name="div-assets" value="yes" /> Yes</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Attorney Representation</label>
+      <div class="radio-group">
+        <label><input type="radio" name="div-atty" value="none" /> DIY / No Attorney</label>
+        <label><input type="radio" name="div-atty" value="one" checked /> One Attorney (one spouse)</label>
+        <label><input type="radio" name="div-atty" value="both" /> Both Spouses Have Attorneys</label>
+      </div>
+    </div>
+
+    <button class="calc-btn" onclick="calcDivorce()">Estimate My Divorce Costs</button>
+
+    <div id="div-result" class="result-box">
+      <div class="result-range" id="div-range"></div>
+      <div class="result-label">Estimated Total Divorce Cost</div>
+      <div class="result-breakdown">
+        <div class="result-item"><div class="label">Court Filing Fees</div><div class="value" id="div-filing"></div></div>
+        <div class="result-item"><div class="label">Attorney Fees</div><div class="value" id="div-atty-cost"></div></div>
+        <div class="result-item"><div class="label">Mediation (if needed)</div><div class="value" id="div-mediation"></div></div>
+        <div class="result-item"><div class="label">Additional Court Costs</div><div class="value" id="div-court"></div></div>
+      </div>
+      <p id="div-advice" style="margin-top:16px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
+      <div class="disclaimer">⚠️ These are estimates based on state averages. Actual costs depend on your specific attorney, case complexity, and local court fees. Many attorneys offer free initial consultations.</div>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="content-section">
+    <p class="quick-answer">The average contested divorce in the US costs <strong>$15,000–$30,000 per spouse</strong>. An uncontested divorce where both parties fully agree typically runs <strong>$1,500–$5,000 total</strong>. The single biggest driver of divorce cost is whether spouses can agree — every contested issue adds attorney hours at $200–$450/hour in most markets.</p>
+
+    <h3>What Drives Divorce Costs Up?</h3>
+    <p>Attorney hourly rates are the primary variable — ranging from $150/hr in rural areas to $500+/hr in major metros. When divorcing spouses can't agree on custody, property division, or support, those disagreements must be resolved through negotiation, mediation, or court hearings — each of which adds significant billable time. A custody dispute alone can add $5,000–$20,000 to the total cost. High-asset divorces with business valuation, real estate appraisal, or forensic accounting can easily run $50,000–$100,000+.</p>
+
+    <h3>How to Reduce Your Divorce Costs</h3>
+    <p>The most effective cost-reduction strategy is reaching agreements outside of court. Divorce mediation — using a neutral third party to help spouses reach decisions — typically costs $3,000–$8,000 total for both parties, far less than litigated divorces. Collaborative divorce (where both attorneys commit to avoiding court) is another cost-effective middle ground. If you and your spouse can agree on all issues, using a single attorney to prepare documents, or a legal document service, can bring total costs under $2,000.</p>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How much does a divorce cost on average in 2026? <span class="arrow">▼</span></button>
+      <div class="faq-a">The national average for a contested divorce is $15,000–$30,000 per spouse when both have attorneys. An uncontested divorce (both parties fully agree) typically costs $1,500–$5,000 total. Court filing fees alone average $300–$400 in most states but can be as high as $435 in California or as low as $50 in some states.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What's the difference between contested and uncontested divorce? <span class="arrow">▼</span></button>
+      <div class="faq-a">An uncontested divorce means both spouses agree on all issues: property division, child custody, child support, spousal support, and asset/debt allocation. This can often be done without a trial and sometimes without separate attorneys. A contested divorce means spouses disagree on one or more issues, requiring negotiation, possible mediation, and potentially court hearings — all of which significantly increase costs and time.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do I need a lawyer to get divorced? <span class="arrow">▼</span></button>
+      <div class="faq-a">You're not legally required to have an attorney in most states. DIY divorce is feasible if: your divorce is uncontested, you have no children, minimal shared assets, and no spousal support issues. Many court websites provide self-help divorce packets. However, for any divorce involving children, significant assets, debts, or retirement accounts (which require a QDRO to divide), consulting an attorney is strongly advisable — mistakes in divorce agreements can be very costly to fix later.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does a divorce take? <span class="arrow">▼</span></button>
+      <div class="faq-a">Most states have a mandatory waiting period of 30–90 days from filing. Uncontested divorces typically complete in 3–6 months. Contested divorces, especially with custody battles or complex assets, can take 1–3 years. California has a 6-month mandatory waiting period from the date of service, making it one of the longest even for uncontested cases.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is divorce mediation and how much does it cost? <span class="arrow">▼</span></button>
+      <div class="faq-a">Divorce mediation involves a neutral third-party mediator helping both spouses reach agreements on contested issues. It's much less expensive than going to court. Private mediators typically charge $150–$300/hour, and most divorces resolve in 3–10 sessions, totaling $3,000–$8,000 for both parties. Court-ordered mediation, required in many states for custody disputes, is often available for lower fees based on income.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed family law attorney in your state.</p>
+</footer>
+
+<script>
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+  const fmtRange = (lo, hi) => '$' + Math.round(lo).toLocaleString() + ' – $' + Math.round(hi).toLocaleString();
+
+  const stateMult = { avg:1.0, ca:1.6, tx:1.1, fl:1.1, ny:1.7, il:1.2, pa:1.1, oh:0.9, ga:1.0, nc:0.9, wa:1.3, az:1.0, co:1.2, or:1.2, nv:1.1, wy:0.8, other:1.0 };
+  const stateFilingFees = { avg:350, ca:435, tx:300, fl:400, ny:210, il:289, pa:200, oh:300, ga:200, nc:225, wa:314, az:349, co:230, or:287, nv:299, wy:90, other:300 };
+
+  function calcDivorce() {
+    const state = document.getElementById('div-state').value;
+    const type = document.querySelector('input[name="div-type"]:checked').value;
+    const children = document.querySelector('input[name="div-children"]:checked').value;
+    const assets = document.querySelector('input[name="div-assets"]:checked').value;
+    const atty = document.querySelector('input[name="div-atty"]:checked').value;
+
+    const mult = stateMult[state] || 1.0;
+    const filingFee = stateFilingFees[state] || 300;
+
+    let attyLo = 0, attyHi = 0;
+    if (type === 'uncontested') {
+      if (atty === 'one') { attyLo = 800 * mult; attyHi = 2500 * mult; }
+      else if (atty === 'both') { attyLo = 1500 * mult; attyHi = 5000 * mult; }
+    } else {
+      if (atty === 'one') { attyLo = 5000 * mult; attyHi = 15000 * mult; }
+      else if (atty === 'both') { attyLo = 15000 * mult; attyHi = 30000 * mult; }
+    }
+
+    let mediationLo = 0, mediationHi = 0;
+    if (type === 'contested') { mediationLo = 1500 * mult; mediationHi = 5000 * mult; }
+    if (children === 'yes' && type === 'contested') { mediationLo += 1000; mediationHi += 3000; }
+
+    let extraLo = 0, extraHi = 0;
+    if (assets === 'yes') { extraLo += 500 * mult; extraHi += 3000 * mult; }
+    if (children === 'yes' && type === 'contested') { extraLo += 2000; extraHi += 8000; }
+
+    const totalLo = filingFee + attyLo + mediationLo + extraLo;
+    const totalHi = filingFee + attyHi + mediationHi + extraHi;
+
+    document.getElementById('div-range').textContent = fmtRange(totalLo, totalHi);
+    document.getElementById('div-filing').textContent = fmt(filingFee);
+    document.getElementById('div-atty-cost').textContent = attyLo === 0 ? '$0 (DIY)' : fmtRange(attyLo, attyHi);
+    document.getElementById('div-mediation').textContent = mediationLo === 0 ? 'Unlikely needed' : fmtRange(mediationLo, mediationHi);
+    document.getElementById('div-court').textContent = extraLo === 0 ? '$0' : fmtRange(extraLo, extraHi);
+
+    let advice = '';
+    if (type === 'uncontested' && atty === 'none') {
+      advice = '✅ DIY uncontested divorce is very feasible. Court self-help websites often provide free forms. Budget for the filing fee and possibly document notarization costs.';
+    } else if (type === 'uncontested') {
+      advice = '💡 Your case is well-suited for a streamlined process. Consider using a single mediator or document preparation service to reduce costs further.';
+    } else if (children === 'yes') {
+      advice = '⚠️ Custody disputes are the single biggest cost driver in divorce. Mediation is strongly recommended — it saves money AND produces better outcomes for children than courtroom battles.';
+    } else {
+      advice = '💡 A contested divorce with an experienced family law attorney is your best protection. Request a free initial consultation from 2–3 attorneys before committing.';
+    }
+    document.getElementById('div-advice').textContent = advice;
+    document.getElementById('div-result').classList.add('show');
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+</script>
+</body>
+</html>

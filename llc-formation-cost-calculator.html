@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLC Formation Cost Calculator 2026 — Real State Filing Fees | FreeLegalIQ</title>
+  <meta name="description" content="Calculate the real cost to form an LLC in any US state in 2026 — state filing fees, registered agent, operating agreement, EIN, and ongoing annual costs." />
+  <link rel="canonical" href="https://freelegaliq.com/llc-formation-cost-calculator.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "LLC Formation Cost Calculator",
+    "url": "https://freelegaliq.com/llc-formation-cost-calculator.html",
+    "description": "Calculate real LLC formation costs by state including state filing fees, registered agent, operating agreement, EIN, and annual report costs.",
+    "applicationCategory": "LegalApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227; --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280; --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 14px; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+    .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    .form-group select { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; color: var(--text); background: var(--bg); transition: border-color 0.2s; }
+    .form-group select:focus { outline: none; border-color: var(--accent); background: white; }
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-group label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 500; cursor: pointer; padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: all 0.2s; }
+    .radio-group label:hover { border-color: var(--accent); }
+    .radio-group input[type="radio"] { accent-color: var(--accent); }
+    .checkbox-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .checkbox-group label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 500; cursor: pointer; padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: all 0.2s; }
+    .checkbox-group label:hover { border-color: var(--accent); }
+    .checkbox-group input[type="checkbox"] { accent-color: var(--accent); width: 15px; height: 15px; }
+    .state-fee-note { font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-top: 4px; display: none; }
+    .calc-btn { width: 100%; background: var(--primary); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .calc-btn:hover { background: var(--accent); color: var(--primary); }
+    .result-box { background: linear-gradient(135deg, #f0f3fa, #fdf8ec); border: 1px solid #c9a227; border-radius: var(--radius); padding: 24px; margin-top: 24px; display: none; }
+    .result-box.show { display: block; }
+    .cost-section { margin-bottom: 20px; }
+    .cost-section h3 { font-size: 1rem; font-weight: 700; margin-bottom: 12px; color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+    .cost-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .cost-row:last-child { border-bottom: none; }
+    .cost-row .cost-label { color: #374151; }
+    .cost-row .cost-val { font-weight: 700; color: var(--primary); }
+    .cost-total { background: var(--primary); color: white; border-radius: 8px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 1.05rem; margin-top: 8px; }
+    .quick-answer { background: #eef1f9; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; }
+    .content-section { margin-bottom: 32px; }
+    .content-section h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .content-section p { font-size: 0.93rem; line-height: 1.7; color: #374151; margin-bottom: 14px; }
+    .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--card); border: none; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text); }
+    .faq-q:hover { background: #f8f9fd; }
+    .faq-q .arrow { transition: transform 0.2s; font-size: 0.8rem; color: var(--muted); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; font-size: 0.9rem; line-height: 1.65; color: #374151; background: #f8f9fd; }
+    .faq-a.open { max-height: 400px; padding: 14px 20px 18px; }
+    .adsbygoogle { display: block; margin: 28px auto; max-width: 728px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+    .back-link:hover { text-decoration: underline; }
+    footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) { .nav-links { display: none; } .radio-group { flex-direction: column; } .checkbox-group { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <div class="nav-links">
+    <a href="divorce-cost-calculator.html">Divorce</a>
+    <a href="dui-cost-calculator.html">DUI</a>
+    <a href="personal-injury-settlement-calculator.html">Injury</a>
+    <a href="estate-planning-cost-calculator.html">Estate</a>
+    <a href="llc-formation-cost-calculator.html">LLC</a>
+    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="child-support-calculator.html">Child Support</a>
+    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="immigration-fee-calculator.html">Immigration</a>
+    <a href="small-claims-court-calculator.html">Small Claims</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>🏢 LLC Formation Cost Calculator</h1>
+  <p>Get the real cost to form an LLC in your state — exact state filing fees plus ongoing annual costs.</p>
+</div>
+
+<div class="container">
+  <a class="back-link" href="/">← All Legal Calculators</a>
+
+  <div class="calc-panel">
+    <h2>LLC Formation Cost Estimator</h2>
+    <p class="subtitle">Uses real 2026 state filing fees. All calculations stay in your browser.</p>
+
+    <div class="form-group">
+      <label>State of Formation</label>
+      <select id="llc-state" onchange="showStateFee()">
+        <option value="al">Alabama — $200</option>
+        <option value="ak">Alaska — $250</option>
+        <option value="az">Arizona — $50</option>
+        <option value="ar">Arkansas — $45</option>
+        <option value="ca">California — $70</option>
+        <option value="co">Colorado — $50</option>
+        <option value="ct">Connecticut — $120</option>
+        <option value="de">Delaware — $90</option>
+        <option value="fl">Florida — $125</option>
+        <option value="ga">Georgia — $100</option>
+        <option value="hi">Hawaii — $50</option>
+        <option value="id">Idaho — $100</option>
+        <option value="il">Illinois — $150</option>
+        <option value="in">Indiana — $95</option>
+        <option value="ia">Iowa — $50</option>
+        <option value="ks">Kansas — $160</option>
+        <option value="ky">Kentucky — $40</option>
+        <option value="la">Louisiana — $100</option>
+        <option value="me">Maine — $175</option>
+        <option value="md">Maryland — $100</option>
+        <option value="ma">Massachusetts — $500</option>
+        <option value="mi">Michigan — $50</option>
+        <option value="mn">Minnesota — $135</option>
+        <option value="ms">Mississippi — $50</option>
+        <option value="mo">Missouri — $50</option>
+        <option value="mt">Montana — $35</option>
+        <option value="ne">Nebraska — $100</option>
+        <option value="nv">Nevada — $425</option>
+        <option value="nh">New Hampshire — $100</option>
+        <option value="nj">New Jersey — $125</option>
+        <option value="nm">New Mexico — $50</option>
+        <option value="ny">New York — $200</option>
+        <option value="nc">North Carolina — $125</option>
+        <option value="nd">North Dakota — $135</option>
+        <option value="oh">Ohio — $99</option>
+        <option value="ok">Oklahoma — $100</option>
+        <option value="or">Oregon — $100</option>
+        <option value="pa">Pennsylvania — $125</option>
+        <option value="ri">Rhode Island — $150</option>
+        <option value="sc">South Carolina — $110</option>
+        <option value="sd">South Dakota — $150</option>
+        <option value="tn" selected>Tennessee — $300</option>
+        <option value="tx">Texas — $300</option>
+        <option value="ut">Utah — $54</option>
+        <option value="vt">Vermont — $125</option>
+        <option value="va">Virginia — $100</option>
+        <option value="wa">Washington — $200</option>
+        <option value="wv">West Virginia — $100</option>
+        <option value="wi">Wisconsin — $130</option>
+        <option value="wy">Wyoming — $100</option>
+      </select>
+      <div id="state-fee-note" class="state-fee-note"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Registered Agent</label>
+      <div class="radio-group">
+        <label><input type="radio" name="llc-ra" value="self" checked /> Act as Own Agent (Free)</label>
+        <label><input type="radio" name="llc-ra" value="service" /> Hire Registered Agent Service (~$100–$200/yr)</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Additional Services Needed</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="llc-oa" checked /> Operating Agreement</label>
+        <label><input type="checkbox" id="llc-ein" checked /> EIN (Federal Tax ID)</label>
+        <label><input type="checkbox" id="llc-atty" /> Attorney-Drafted Documents</label>
+      </div>
+    </div>
+
+    <button class="calc-btn" onclick="calcLLC()">Calculate My LLC Formation Costs</button>
+
+    <div id="llc-result" class="result-box">
+      <div class="cost-section">
+        <h3>One-Time Formation Costs</h3>
+        <div id="llc-one-time-rows"></div>
+        <div class="cost-total" id="llc-one-time-total"><span>One-Time Total</span><span id="llc-ot-val"></span></div>
+      </div>
+      <div class="cost-section">
+        <h3>Estimated Annual Ongoing Costs</h3>
+        <div id="llc-annual-rows"></div>
+        <div class="cost-total" id="llc-annual-total"><span>Annual Total (Ongoing)</span><span id="llc-ann-val"></span></div>
+      </div>
+      <p id="llc-advice" style="margin-top:16px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="content-section">
+    <p class="quick-answer">LLC formation costs vary dramatically by state — from <strong>$35 in Montana</strong> to <strong>$500+ in Massachusetts</strong> for the state filing fee alone. California charges only $70 to form an LLC but imposes an <strong>$800 annual minimum franchise tax</strong> that makes it expensive to maintain. Wyoming and New Mexico are popular choices for low cost and strong liability protection.</p>
+
+    <h3>What's Included in LLC Formation?</h3>
+    <p>Forming an LLC requires at minimum: (1) Filing Articles of Organization with your state Secretary of State (the state filing fee), (2) Designating a registered agent with a physical state address, (3) Creating an Operating Agreement (required in some states, strongly recommended in all), and (4) Obtaining a Federal EIN from the IRS for tax and banking purposes. Optional but common: a business bank account, business licenses, and in some states like New York, mandatory publication in local newspapers (which can cost $1,000–$2,000).</p>
+
+    <h3>Best States to Form an LLC</h3>
+    <p>Wyoming leads as the top "formation-friendly" state: $100 filing fee, $60/year renewal, strong charging order protections, no state income tax, and no public disclosure of members. Delaware is popular for its advanced business law and court system (the Court of Chancery). Nevada offers no state income tax and strong privacy protections. New Mexico allows anonymous LLCs with no annual reports. However, if you do business primarily in one state, forming there is usually simplest — "foreign qualifying" an out-of-state LLC where you operate requires additional fees.</p>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How much does it cost to form an LLC? <span class="arrow">▼</span></button>
+      <div class="faq-a">LLC formation costs range from $35 (Montana) to $500+ (Massachusetts) just for the state filing fee. When you add a registered agent service ($100–$200/year), an operating agreement ($50–$300 for a template or $500–$1,500 for an attorney-drafted version), and the EIN (free from the IRS), total first-year costs typically run $300–$1,000 DIY or $800–$2,500 with attorney assistance.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do I need an attorney to form an LLC? <span class="arrow">▼</span></button>
+      <div class="faq-a">For a simple single-member LLC, most people can DIY the formation using their state's Secretary of State website plus free or low-cost operating agreement templates. For multi-member LLCs, LLCs with complex ownership structures, or LLCs in regulated industries, an attorney-drafted operating agreement is worth the investment — it prevents costly disputes between members later. Many online formation services (LegalZoom, ZenBusiness, Incfile) offer middle-ground options for $150–$500.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is a registered agent and do I need one? <span class="arrow">▼</span></button>
+      <div class="faq-a">A registered agent is a person or service with a physical address in your state who receives legal documents (lawsuits, government notices) on behalf of your LLC. Every LLC is legally required to have one. You can act as your own registered agent if you have a physical address in the state (not a P.O. box) and are available during business hours. Many business owners use a registered agent service ($100–$200/year) for privacy (keeps your home address off public records) and reliability.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is an operating agreement required? <span class="arrow">▼</span></button>
+      <div class="faq-a">California, Delaware, Maine, Missouri, Nebraska, and New York legally require operating agreements. All other states strongly recommend having one. Even for a single-member LLC, an operating agreement: establishes your LLC as separate from you personally (important for liability protection), documents your management structure, and is required by most banks to open a business account. Without one, your state's default LLC rules govern your business — which may not match your intentions.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What are the ongoing annual costs of maintaining an LLC? <span class="arrow">▼</span></button>
+      <div class="faq-a">Most states require an annual report (or biennial report) with a filing fee ranging from $0 (New Mexico, Arizona) to $800+ (California franchise tax). Registered agent service adds $100–$200/year. Business license renewals vary by city/county. Accounting and tax preparation for an LLC that elects S-Corp status costs $800–$2,000/year. California's $800 minimum franchise tax applies even if the LLC has no income, making it one of the most expensive states to maintain an LLC.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Verify current fees with your state Secretary of State's website.</p>
+</footer>
+
+<script>
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+
+  const stateData = {
+    al:{fee:200,annual:100,annualNote:'Annual report: $100'},
+    ak:{fee:250,annual:100,annualNote:'Biennial report: $100'},
+    az:{fee:50,annual:0,annualNote:'No annual report required'},
+    ar:{fee:45,annual:150,annualNote:'Annual franchise tax: $150'},
+    ca:{fee:70,annual:800,annualNote:'Annual franchise tax: $800 minimum'},
+    co:{fee:50,annual:10,annualNote:'Periodic report: $10'},
+    ct:{fee:120,annual:80,annualNote:'Annual report: $80'},
+    de:{fee:90,annual:300,annualNote:'Annual franchise tax: ~$300'},
+    fl:{fee:125,annual:138,annualNote:'Annual report: $138.75'},
+    ga:{fee:100,annual:50,annualNote:'Annual registration: $50'},
+    hi:{fee:50,annual:15,annualNote:'Annual report: $15'},
+    id:{fee:100,annual:0,annualNote:'No annual report required'},
+    il:{fee:150,annual:75,annualNote:'Annual report: $75'},
+    in:{fee:95,annual:32,annualNote:'Biennial report: $32'},
+    ia:{fee:50,annual:60,annualNote:'Biennial report: $60'},
+    ks:{fee:160,annual:55,annualNote:'Annual report: $55'},
+    ky:{fee:40,annual:15,annualNote:'Annual report: $15'},
+    la:{fee:100,annual:35,annualNote:'Annual report: $35'},
+    me:{fee:175,annual:85,annualNote:'Annual report: $85'},
+    md:{fee:100,annual:300,annualNote:'Annual personal property return: ~$300'},
+    ma:{fee:500,annual:500,annualNote:'Annual report: $500'},
+    mi:{fee:50,annual:25,annualNote:'Annual statement: $25'},
+    mn:{fee:135,annual:0,annualNote:'No annual report (biennial: $25)'},
+    ms:{fee:50,annual:0,annualNote:'No annual report required'},
+    mo:{fee:50,annual:0,annualNote:'No annual report required'},
+    mt:{fee:35,annual:20,annualNote:'Annual report: $20'},
+    ne:{fee:100,annual:13,annualNote:'Biennial report: $13'},
+    nv:{fee:425,annual:350,annualNote:'Annual list + state business license: ~$350'},
+    nh:{fee:100,annual:100,annualNote:'Annual report: $100'},
+    nj:{fee:125,annual:75,annualNote:'Annual report: $75'},
+    nm:{fee:50,annual:0,annualNote:'No annual report required'},
+    ny:{fee:200,annual:9,annualNote:'Biennial report: $9 (Note: publication requirement ~$1,000–$2,000)'},
+    nc:{fee:125,annual:200,annualNote:'Annual report: $200'},
+    nd:{fee:135,annual:50,annualNote:'Annual report: $50'},
+    oh:{fee:99,annual:0,annualNote:'No annual report required'},
+    ok:{fee:100,annual:25,annualNote:'Annual certificate: $25'},
+    or:{fee:100,annual:100,annualNote:'Annual report: $100'},
+    pa:{fee:125,annual:70,annualNote:'Decennial report: $70 (every 10 years)'},
+    ri:{fee:150,annual:50,annualNote:'Annual report: $50'},
+    sc:{fee:110,annual:0,annualNote:'No annual report required'},
+    sd:{fee:150,annual:50,annualNote:'Annual report: $50'},
+    tn:{fee:300,annual:300,annualNote:'Annual report: $300'},
+    tx:{fee:300,annual:0,annualNote:'No annual report, but franchise tax may apply'},
+    ut:{fee:54,annual:18,annualNote:'Annual renewal: $18'},
+    vt:{fee:125,annual:35,annualNote:'Annual report: $35'},
+    va:{fee:100,annual:50,annualNote:'Annual registration fee: $50'},
+    wa:{fee:200,annual:60,annualNote:'Annual report: $60'},
+    wv:{fee:100,annual:25,annualNote:'Annual report: $25'},
+    wi:{fee:130,annual:25,annualNote:'Annual report: $25'},
+    wy:{fee:100,annual:60,annualNote:'Annual report: $60 minimum'}
+  };
+
+  function showStateFee() {
+    const state = document.getElementById('llc-state').value;
+    const data = stateData[state];
+    if (data) {
+      const note = document.getElementById('state-fee-note');
+      note.style.display = 'block';
+      note.textContent = `State filing fee: $${data.fee} · ${data.annualNote}`;
+    }
+  }
+
+  function calcLLC() {
+    const state = document.getElementById('llc-state').value;
+    const ra = document.querySelector('input[name="llc-ra"]:checked').value;
+    const needOA = document.getElementById('llc-oa').checked;
+    const needEIN = document.getElementById('llc-ein').checked;
+    const needAtty = document.getElementById('llc-atty').checked;
+    const data = stateData[state] || {fee:150, annual:100, annualNote:'Annual report'};
+
+    // One-time costs
+    const oneTimeRows = [];
+    let oneTimeTotal = 0;
+
+    oneTimeRows.push({label: `State Filing Fee (${state.toUpperCase()})`, val: data.fee});
+    oneTimeTotal += data.fee;
+
+    if (ra === 'service') {
+      oneTimeRows.push({label: 'Registered Agent Service (1st year)', val: 150});
+      oneTimeTotal += 150;
+    }
+
+    if (needOA && !needAtty) {
+      oneTimeRows.push({label: 'Operating Agreement (template)', val: 75});
+      oneTimeTotal += 75;
+    } else if (needOA && needAtty) {
+      oneTimeRows.push({label: 'Operating Agreement (attorney-drafted)', val: 800});
+      oneTimeTotal += 800;
+    }
+
+    if (needEIN) {
+      oneTimeRows.push({label: 'EIN (Federal Tax ID — IRS)', val: 0, note: 'Free'});
+    }
+
+    if (needAtty) {
+      oneTimeRows.push({label: 'Attorney Filing & Review Fee', val: 500});
+      oneTimeTotal += 500;
+    }
+
+    // Annual costs
+    const annualRows = [];
+    let annualTotal = 0;
+
+    if (data.annual > 0) {
+      annualRows.push({label: data.annualNote, val: data.annual});
+      annualTotal += data.annual;
+    } else {
+      annualRows.push({label: data.annualNote, val: 0, note: 'None'});
+    }
+
+    if (ra === 'service') {
+      annualRows.push({label: 'Registered Agent Service (ongoing)', val: 150});
+      annualTotal += 150;
+    }
+
+    annualRows.push({label: 'Business License Renewal (estimate)', val: 50});
+    annualTotal += 50;
+
+    // Render
+    document.getElementById('llc-one-time-rows').innerHTML = oneTimeRows.map(r =>
+      `<div class="cost-row"><span class="cost-label">${r.label}</span><span class="cost-val">${r.note === 'Free' ? 'Free' : fmt(r.val)}</span></div>`
+    ).join('');
+    document.getElementById('llc-ot-val').textContent = fmt(oneTimeTotal);
+
+    document.getElementById('llc-annual-rows').innerHTML = annualRows.map(r =>
+      `<div class="cost-row"><span class="cost-label">${r.label}</span><span class="cost-val">${r.note === 'None' ? '$0' : fmt(r.val)}</span></div>`
+    ).join('');
+    document.getElementById('llc-ann-val').textContent = fmt(annualTotal) + '/year';
+
+    let advice = '';
+    if (state === 'ca') {
+      advice = '⚠️ California\'s $800 annual franchise tax applies even if your LLC earns nothing. If you\'re just starting out with low revenue, consider whether a Wyoming LLC (operating in California as a foreign LLC) could reduce this burden — consult a CPA.';
+    } else if (state === 'ny') {
+      advice = '⚠️ New York requires LLCs to publish a notice of formation in two local newspapers for 6 consecutive weeks — an often-overlooked requirement that can cost $1,000–$2,000 depending on the county.';
+    } else if (state === 'wy' || state === 'nm' || state === 'de') {
+      advice = '✅ Great choice for LLC formation cost and protections. If you operate primarily in another state, remember you\'ll need to "foreign qualify" there as well, adding that state\'s filing fee and annual costs.';
+    } else {
+      advice = `💡 Your estimated first-year LLC cost is ${fmt(oneTimeTotal)} to form, then approximately ${fmt(annualTotal)}/year to maintain. EIN registration is always free directly from IRS.gov — don't pay third-party services for it.`;
+    }
+    document.getElementById('llc-advice').textContent = advice;
+    document.getElementById('llc-result').classList.add('show');
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+
+  // Show default state fee on load
+  showStateFee();
+</script>
+</body>
+</html>
