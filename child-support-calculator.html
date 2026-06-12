@@ -85,6 +85,76 @@
     footer a:hover { color: var(--accent); }
     @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .result-breakdown { grid-template-columns: 1fr; } .nav-links { display: none; } .radio-group { flex-direction: column; } }
   </style>
+  <!-- FAQPage Schema (AEO) -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is child support calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common method is the income shares model (used in ~40 states): both parents' incomes are combined, a basic support obligation is determined from state guideline tables, and each parent contributes proportionally. The paying parent pays their share to the receiving parent. Texas and New York use a simpler percentage-of-income model: Texas pays 20% of net income for 1 child, 25% for 2, 30% for 3, etc. California uses an algebraic formula that accounts for custody time and net disposable income."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does 50/50 custody mean no child support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. With true 50/50 shared custody, child support is reduced significantly because both parents share physical custody costs directly. However, if there's a significant income disparity between parents, the higher-earning parent typically still pays some child support to equalize the children's standard of living between both households. The specific amount depends on your state's formula and the income difference between parents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does child support last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Child support typically ends when a child turns 18, or 19 if the child is still in high school. Some states extend support to age 21 or through college if ordered by the court. Support can end earlier if the child is legally emancipated (married, self-supporting, joins the military). Child support does not automatically end — you may need to formally request termination through the court when your child reaches the cutoff age, especially if payments are being withheld from your paycheck."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a parent doesn't pay child support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non-payment of child support has serious consequences: wage garnishment (up to 50–65% of disposable income), bank account levies, tax refund interception, professional license suspension, driver's license suspension, passport denial, and contempt of court charges (including jail in serious cases). Child support enforcement agencies in every state actively pursue non-paying parents. Unpaid child support accrues as a judgment debt with interest in most states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can child support be modified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, either parent can petition for modification when there is a \"substantial change in circumstances.\" Most states define this as an income change of 15–20% or more, a custody change, job loss, disability, or a change in the child's needs. The modification is not retroactive — it only applies from the date of the new order, not from when circumstances changed. Don't simply stop paying — continue paying the existing order until a new court order is in place, or you'll owe arrears."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- BreadcrumbList Schema (AEO) -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "FreeLegalIQ",
+      "item": "https://freelegaliq.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Child Support Calculator 2026",
+      "item": "https://freelegaliq.com/child-support-calculator.html"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
