@@ -48,6 +48,45 @@ Before rewriting anything, use web_search to find:
 
 ---
 
+## ⚠️ FILE EDITING — USE THE PATCH SCRIPT (not edit, not read+write)
+
+Calculator pages contain multiple JSON-LD schema blocks. Using `edit` causes match failures;
+using `read`+`write` reproduces the full HTML file and causes timeouts.
+
+**Always use this pattern:**
+
+### Step 1 — Write a patch JSON file
+Write your new content to `/tmp/julie-patch.json`:
+```json
+{
+  "quick_answer": "Your new quick answer text (HTML allowed)...",
+  "faq_answers": ["Answer 1", "Answer 2", "Answer 3", "Answer 4", "Answer 5"],
+  "subtitle_month": "June 2026"
+}
+```
+
+### Step 2 — Run the patch script
+```
+python3 /Users/otis/.openclaw/workspace/tools/patch-page.py \
+  /Users/otis/.openclaw/workspace/websites/legal-calc/[page-file] \
+  /tmp/julie-patch.json
+```
+The script handles both FAQ styles automatically and prints what it changed.
+
+### Step 3 — Update sitemap.xml lastmod
+```
+python3 -c "
+import re
+with open('/Users/otis/.openclaw/workspace/websites/legal-calc/sitemap.xml') as f: s = f.read()
+s = re.sub(r'(<loc>https://freelegaliq.com/[PAGE-FILE]</loc>\\s*<lastmod>)[^<]+(</lastmod>)', r'\\g<1>[YYYY-MM-DD]\\2', s)
+with open('/Users/otis/.openclaw/workspace/websites/legal-calc/sitemap.xml','w') as f: f.write(s)
+"
+```
+
+**Never use `edit` or `read`+`write` on any calculator HTML or sitemap.xml.**
+
+---
+
 ## WHAT TO UPDATE EACH RUN
 
 ### 1. Quick Answer Blurb
