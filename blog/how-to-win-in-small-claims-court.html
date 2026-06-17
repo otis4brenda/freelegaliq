@@ -58,7 +58,7 @@
     footer a:hover{color:var(--accent);}
     @media(max-width:600px){.nav-links{display:none;}.limit-table{font-size:0.8rem;}}
   .amazon-rec{background:#f0f2f8;border:1px solid #d1d9e8;border-radius:12px;padding:20px 24px;margin:32px 0;}.amazon-rec-label{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#1a2744;margin-bottom:12px;}.amazon-rec-item{display:flex;gap:16px;align-items:flex-start;}.amazon-rec-info{flex:1;}.amazon-rec-title{font-weight:700;font-size:1rem;color:#1a1a2e;margin-bottom:4px;}.amazon-rec-desc{font-size:0.88rem;color:#6b7280;margin-bottom:10px;}.amazon-rec-btn{display:inline-block;background:#c9a227;color:white;font-size:0.85rem;font-weight:600;padding:8px 16px;border-radius:6px;text-decoration:none;}.amazon-rec-btn:hover{background:#a8841e;}
-  </style>
+  .amazon-rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:8px;}.amazon-rec-item{background:rgba(255,255,255,0.5);border-radius:8px;padding:14px;}.amazon-rec-author{font-size:0.82rem;color:#6b7280;margin-bottom:6px;font-style:italic;}</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -290,11 +290,30 @@
 </div>
 <div class="amazon-rec">
   <div class="amazon-rec-label">📚 Recommended Reading</div>
-  <div class="amazon-rec-item">
-    <div class="amazon-rec-info">
-      <div class="amazon-rec-title">Everybody's Guide to Small Claims Court</div>
-      <div class="amazon-rec-desc">Ralph Warner's strategies for presenting your case effectively and maximizing your odds of winning.</div>
-      <a class="amazon-rec-btn" href="https://www.amazon.com/dp/B09N9PFWNN/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+  <div class="amazon-rec-grid">
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">Everybody's Guide to Small Claims Court</div>
+        <div class="amazon-rec-author">Ralph Warner</div>
+        <div class="amazon-rec-desc">The definitive guide to winning in small claims court — from evidence to courtroom presentation.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/1413329810/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">Win Your Case</div>
+        <div class="amazon-rec-author">Gerry Spence</div>
+        <div class="amazon-rec-desc">How to build and present a compelling argument — written by one of America's most successful trial lawyers.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/0312363834/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">Represent Yourself in Court</div>
+        <div class="amazon-rec-author">Paul Bergman</div>
+        <div class="amazon-rec-desc">Everything you need to win without a lawyer — preparation, evidence, witnesses, and courtroom strategy.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/1413327834/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
     </div>
   </div>
 </div>

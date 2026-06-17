@@ -54,7 +54,7 @@
     footer a:hover{color:var(--accent);}
     @media(max-width:600px){.nav-links{display:none;}}
   .amazon-rec{background:#f0f2f8;border:1px solid #d1d9e8;border-radius:12px;padding:20px 24px;margin:32px 0;}.amazon-rec-label{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#1a2744;margin-bottom:12px;}.amazon-rec-item{display:flex;gap:16px;align-items:flex-start;}.amazon-rec-info{flex:1;}.amazon-rec-title{font-weight:700;font-size:1rem;color:#1a1a2e;margin-bottom:4px;}.amazon-rec-desc{font-size:0.88rem;color:#6b7280;margin-bottom:10px;}.amazon-rec-btn{display:inline-block;background:#c9a227;color:white;font-size:0.85rem;font-weight:600;padding:8px 16px;border-radius:6px;text-decoration:none;}.amazon-rec-btn:hover{background:#a8841e;}
-  </style>
+  .amazon-rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:8px;}.amazon-rec-item{background:rgba(255,255,255,0.5);border-radius:8px;padding:14px;}.amazon-rec-author{font-size:0.82rem;color:#6b7280;margin-bottom:6px;font-style:italic;}</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -209,11 +209,30 @@
 </div>
 <div class="amazon-rec">
   <div class="amazon-rec-label">📚 Recommended Reading</div>
-  <div class="amazon-rec-item">
-    <div class="amazon-rec-info">
-      <div class="amazon-rec-title">Plan Your Estate</div>
-      <div class="amazon-rec-desc">Denis Clifford's definitive guide to wills, trusts, and estate planning — written in language anyone can understand.</div>
-      <a class="amazon-rec-btn" href="https://www.amazon.com/dp/B07BDSG5VN/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+  <div class="amazon-rec-grid">
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">8 Ways to Avoid Probate</div>
+        <div class="amazon-rec-author">Mary Randolph</div>
+        <div class="amazon-rec-desc">Nolo's practical guide to wills, trusts, and avoiding the probate process — over 200,000 copies sold.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/1413330428/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">Make Your Own Living Trust</div>
+        <div class="amazon-rec-author">Denis Clifford</div>
+        <div class="amazon-rec-desc">The bestselling Nolo guide to creating a living trust that avoids probate and protects your family.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/1413330312/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="amazon-rec-item">
+      <div class="amazon-rec-info">
+        <div class="amazon-rec-title">The Wall Street Journal Complete Estate Planning Guidebook</div>
+        <div class="amazon-rec-author">Rachel Emma Silverman</div>
+        <div class="amazon-rec-desc">Clear, unbiased guidance on wills, trusts, and estate planning decisions from the WSJ.</div>
+        <a class="amazon-rec-btn" href="https://www.amazon.com/dp/0307461459/ref=nosim?tag=envisionconte-20" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+      </div>
     </div>
   </div>
 </div>
