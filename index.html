@@ -85,13 +85,34 @@
     .nav-links a:hover { color: var(--accent); }
     .hero {
       background: linear-gradient(135deg, #1a2744 0%, #243460 50%, #0f1a30 100%);
+      position: relative;
       color: white;
       text-align: center;
-      padding: 64px 24px 56px;
+      padding: 72px 24px 60px;
+      overflow: hidden;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1400&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.38);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 14px; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.9); }
     .hero h1 span { color: var(--accent); }
-    .hero p { font-size: 1.1rem; opacity: 0.92; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; }
+    .hero p { font-size: 1.1rem; font-weight: 600; color: #ffffff; opacity: 1; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; text-shadow: 0 2px 8px rgba(0,0,0,0.9); }
     .hero-badge {
       display: inline-block;
       background: rgba(201,162,39,0.2);
@@ -144,19 +165,18 @@
       text-align: center;
     }
     .btn-primary:hover { background: var(--accent); color: var(--primary); }
-    .trust-strip {
+    /* TRUST BAR */
+    .trust-bar {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 28px;
+      border-bottom: 1px solid #e8f0fe;
+      padding: 14px 24px;
       display: flex;
+      justify-content: center;
       gap: 32px;
-      align-items: center;
       flex-wrap: wrap;
-      margin: 32px 0;
     }
-    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--muted); font-weight: 500; }
-    .trust-item span:first-child { font-size: 1.3rem; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: #444; }
+    .trust-icon { width: 28px; height: 28px; background: #f0f7ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
     .faq-section { margin: 40px 0; }
     .faq-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
     .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
@@ -169,7 +189,7 @@
     footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 32px 24px; font-size: 0.85rem; margin-top: 48px; }
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: var(--accent); }
-    @media (max-width: 640px) { .nav-links { display: none; } .trust-strip { flex-direction: column; gap: 14px; align-items: flex-start; } }
+    @media (max-width: 640px) { .nav-links { display: none; } .trust-bar { flex-direction: column; gap: 14px; align-items: flex-start; } }
   </style>
 </head>
 <body>
@@ -192,19 +212,21 @@
 </nav>
 
 <div class="hero">
-  <h1>Free Legal Cost Calculators — <span>Know Before You Call</span></h1>
-  <p>Estimate real legal costs before hiring an attorney. No email required, no sales pitch, no jargon — just honest numbers.</p>
-  <span class="hero-badge">⚖️ 100% Free · No Sign-Up · No Data Sold · Updated 2026</span>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Free Legal Cost Calculators — <span>Know Before You Call</span></h1>
+    <p>Estimate real legal costs before hiring an attorney. No email required, no sales pitch, no jargon — just honest numbers.</p>
+    <span class="hero-badge">⚖️ 100% Free · No Sign-Up · No Data Sold · Updated 2026</span>
+  </div>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-icon">🔒</span> No personal data collected</div>
+  <div class="trust-item"><span class="trust-icon">⚡</span> Instant results, no sign-up</div>
+  <div class="trust-item"><span class="trust-icon">✅</span> Based on 2026 US data</div>
 </div>
 
 <div class="container">
-
-  <div class="trust-strip">
-    <div class="trust-item"><span>🔒</span><span>No personal data collected</span></div>
-    <div class="trust-item"><span>⚖️</span><span>Not affiliated with any law firm</span></div>
-    <div class="trust-item"><span>📊</span><span>Results stay in your browser</span></div>
-    <div class="trust-item"><span>💡</span><span>Based on 2026 US data</span></div>
-  </div>
 
   <div class="section-title">Choose a Legal Cost Calculator</div>
   <div class="tool-grid">
