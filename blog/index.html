@@ -27,7 +27,7 @@
     .nav-links{display:flex;gap:14px;}
     .nav-links a{text-decoration:none;color:rgba(255,255,255,0.75);font-size:0.78rem;font-weight:500;}
     .nav-links a:hover{color:var(--accent);}
-    .hero{background:linear-gradient(135deg,#1a2744,#243460);color:white;padding:48px 24px 40px;text-align:center;}
+    .hero{background:linear-gradient(135deg,#1a2744,#243460);position:relative;color:white;padding:64px 24px 52px;text-align:center;overflow:hidden;min-height:260px;display:flex;align-items:center;justify-content:center;}.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1400&q=80&auto=format&fit=crop');background-size:cover;background-position:center;filter:brightness(0.65);z-index:0;}.hero-content{position:relative;z-index:1;max-width:680px;margin:0 auto;}
     .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:12px;}
     .hero p{font-size:1rem;opacity:0.9;max-width:600px;margin:0 auto;}
     .container{max-width:860px;margin:0 auto;padding:40px 24px;}
@@ -62,8 +62,11 @@
   </div>
 </nav>
 <div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
   <h1>Legal Guides &amp; Articles</h1>
   <p>Plain-English answers to real legal questions — from divorce costs to DUI consequences to forming an LLC. No jargon, no fluff.</p>
+  </div>
 </div>
 <div class="container">
 
