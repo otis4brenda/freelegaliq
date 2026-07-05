@@ -164,8 +164,30 @@
     .nav-links { display: flex; gap: 14px; }
     .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--accent); }
-    .page-hero { background: linear-gradient(135deg, #1a2744 0%, #243460 100%); color: white; text-align: center; padding: 44px 24px 36px; }
-    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .page-hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      padding: 56px 24px 44px;
+    }
+    .page-hero .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.35);
+      z-index: 0;
+    }
+    .page-hero .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.85); }
+    .page-hero p { font-size: 1rem; opacity: 0.95; max-width: 520px; margin: 0 auto; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
     .page-hero p { font-size: 1rem; opacity: 0.9; max-width: 560px; margin: 0 auto; }
     .hero-badges { display: flex; justify-content: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
     .hero-badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 5px 14px; font-size: 0.8rem; color: rgba(255,255,255,0.9); }
@@ -270,6 +292,8 @@
 </nav>
 
 <div class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
   <h1>🚔 DUI Cost Calculator 2026</h1>
   <p>A DUI costs far more than just the fine. Calculate your true total — fines, attorney, DUI school, ignition interlock, and the insurance hit — by state.</p>
   <div class="hero-badges">
@@ -278,6 +302,7 @@
     <span class="hero-badge">✓ Updated June 2026</span>
     <span class="hero-badge">✓ Free, No Sign-Up</span>
   </div>
+</div>
 </div>
 
 <div class="container">
