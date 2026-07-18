@@ -215,6 +215,14 @@
 <div class="container">
   <a class="back-link" href="/">← All Legal Calculators</a>
 
+  <!-- Editorial intro above calculator -->
+  <div style="background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 28px; box-shadow: var(--shadow);">
+    <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 14px;">How Child Support Is Calculated in the US (2026)</h2>
+    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 14px;">Child support in the United States is determined by state-specific guidelines, not the discretion of individual judges. Most states use one of two primary models: the <strong>Income Shares Model</strong> (used by approximately 40 states), which considers both parents' gross incomes and estimates how much the couple would have spent on the child if still together, or the <strong>Percentage of Income Model</strong>, which applies a flat percentage to the paying parent's net income. Texas, Illinois, and New York use percentage-based formulas; California uses its own algorithmic "Guideline" calculation that accounts for custody time share and net disposable income.</p>
+    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 14px;">Beyond the base amount, most child support orders include mandatory add-ons: health insurance premiums (the cost attributed to the child), unreimbursed medical expenses, and work-related childcare costs. These add-ons are typically split between parents proportionally to their incomes and can add 15–40% above the base calculation. The final order entered by the court is the only legally binding number — private agreements between parents are not enforceable unless incorporated into a court order.</p>
+    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151;">Use this free calculator to estimate your state's likely obligation. For a legally reliable number, consult a licensed family law attorney in your state or contact your state's Child Support Services (CSS) office.</p>
+  </div>
+
   <div class="calc-panel">
     <h2>Child Support Estimator</h2>
     <p class="subtitle">Uses the income shares model. Results are estimates — courts apply state-specific guidelines. All calculations stay in your browser. · Updated 2026</p>
@@ -297,6 +305,36 @@
     <p>The base child support payment is intended to cover a child's basic needs: food, housing, clothing, and education expenses proportional to each parent's income. Most states build in additional "add-on" expenses on top of the base support: health insurance premiums, unreimbursed medical and dental costs, childcare expenses (daycare, after-school care), and sometimes extracurricular activities. These add-ons are typically split between parents in proportion to their respective incomes. It's important to understand that a child support order alone may not cover all of a child's actual expenses — high medical costs, private schooling, or significant childcare needs are often addressed separately in the court order.</p>
   </div>
 
+  <!-- State-by-State Child Support Reference Table -->
+  <div style="background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 28px; box-shadow: var(--shadow); overflow-x: auto;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">Child Support Averages by State — 2026 Reference</h3>
+    <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 16px;">Monthly child support for one child at typical median incomes ($5,000 paying parent / $3,000 receiving parent gross). Actual amounts vary by specific incomes, custody arrangements, and add-ons.</p>
+    <table style="width:100%; border-collapse:collapse; font-size:0.87rem;">
+      <thead>
+        <tr style="background:var(--primary); color:white;">
+          <th style="padding:9px 12px; text-align:left;">State</th>
+          <th style="padding:9px 12px; text-align:left;">Model</th>
+          <th style="padding:9px 12px; text-align:left;">Est. 1-Child/mo</th>
+          <th style="padding:9px 12px; text-align:left;">Est. 2-Children/mo</th>
+          <th style="padding:9px 12px; text-align:left;">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">California</td><td style="padding:8px 12px;">Guideline Formula</td><td style="padding:8px 12px;">$700–$950</td><td style="padding:8px 12px;">$1,100–$1,500</td><td style="padding:8px 12px; color:var(--muted);">Highly variable by timeshare</td></tr>
+        <tr style="background:#f8f9fd; border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Texas</td><td style="padding:8px 12px;">% of Net Income</td><td style="padding:8px 12px;">$850–$1,100</td><td style="padding:8px 12px;">$1,100–$1,400</td><td style="padding:8px 12px; color:var(--muted);">20% net for 1 child; cap at $9,200/mo net</td></tr>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Florida</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$650–$900</td><td style="padding:8px 12px;">$950–$1,300</td><td style="padding:8px 12px; color:var(--muted);">Overnights affect calculation</td></tr>
+        <tr style="background:#f8f9fd; border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">New York</td><td style="padding:8px 12px;">% of Income (CSSA)</td><td style="padding:8px 12px;">$680–$900</td><td style="padding:8px 12px;">$1,000–$1,300</td><td style="padding:8px 12px; color:var(--muted);">17% combined for 1 child; cap applies</td></tr>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Illinois</td><td style="padding:8px 12px;">% of Net Income</td><td style="padding:8px 12px;">$600–$850</td><td style="padding:8px 12px;">$900–$1,200</td><td style="padding:8px 12px; color:var(--muted);">20% net for 1 child</td></tr>
+        <tr style="background:#f8f9fd; border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Georgia</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$580–$800</td><td style="padding:8px 12px;">$880–$1,150</td><td style="padding:8px 12px; color:var(--muted);">Official guideline worksheets required</td></tr>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">North Carolina</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$550–$750</td><td style="padding:8px 12px;">$830–$1,080</td><td style="padding:8px 12px; color:var(--muted);">Worksheet A or B by custody type</td></tr>
+        <tr style="background:#f8f9fd; border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Ohio</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$530–$720</td><td style="padding:8px 12px;">$800–$1,050</td><td style="padding:8px 12px; color:var(--muted);">ODJFS online calculator available</td></tr>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px; font-weight:600;">Washington</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$620–$870</td><td style="padding:8px 12px;">$930–$1,250</td><td style="padding:8px 12px; color:var(--muted);">Economic table adjustments apply</td></tr>
+        <tr style="background:#f8f9fd;"><td style="padding:8px 12px; font-weight:600;">National Average</td><td style="padding:8px 12px;">Income Shares</td><td style="padding:8px 12px;">$430–$600</td><td style="padding:8px 12px;">$650–$900</td><td style="padding:8px 12px; color:var(--muted);">Per Census Bureau / OCSE data</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:10px;">Sources: State family court guideline tables, Office of Child Support Services (OCSS), US Census Bureau SIPP data, and attorney rate surveys. Figures are estimates; actual court orders vary based on all factors in your specific case.</p>
+  </div>
+
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
@@ -327,6 +365,39 @@
       <button class="faq-q" onclick="toggleFaq(this)">Can child support be modified after the order is entered? <span class="arrow">▼</span></button>
       <div class="faq-a">Most states allow modification when there is a "substantial change in circumstances" — typically defined as a 15–25% change in either parent's income, a significant change in custody, job loss, or the child's changing needs. Many states conduct automatic reviews every 3 years, and either parent can petition for modification at any time with documented evidence. Consulting a licensed family law attorney in your state is advisable before filing a modification request.</div>
     </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Does child support count as income for tax purposes? <span class="arrow">▼</span></button>
+      <div class="faq-a">No. Child support payments are neither deductible by the paying parent nor taxable income to the receiving parent under federal tax law — unlike alimony (spousal support). The custodial parent typically claims the child as a dependent and receives the Child Tax Credit, though divorced or separated parents can agree — or a court can order — that the non-custodial parent claims the dependency exemption instead. A qualified tax professional can help you understand the full tax picture, including the Dependent Care Credit for childcare expenses.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What happens to child support when a parent loses their job? <span class="arrow">▼</span></button>
+      <div class="faq-a">A job loss does not automatically reduce your child support obligation. The existing court order remains fully in force until modified by a new order. Arrears (unpaid support) accrue with interest and cannot be retroactively eliminated. If you lose your job, file a modification request immediately — the modification only takes effect from the filing date, not from when you became unemployed. Courts can impute income (assume earning capacity) if they believe unemployment is voluntary, so document your job search efforts. If you're eligible for unemployment benefits, those payments can still be garnished for child support.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can parents agree to a different child support amount than the state guidelines? <span class="arrow">▼</span></button>
+      <div class="faq-a">Parents can agree to a different amount, but a court must still approve the deviation and find it serves the child's best interests. Courts are generally reluctant to approve support amounts significantly below state guidelines. If parents agree on a higher amount, courts more readily approve that. Any verbal or informal written agreement to pay less than the court order is not legally binding — arrears continue accruing under the original order. The proper path is to petition the court for a formal order reflecting the agreed amount, especially if the deviation is significant.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is income imputation in child support cases? <span class="arrow">▼</span></button>
+      <div class="faq-a">Income imputation is when a court assigns income to a parent based on their earning capacity rather than their actual earnings. Courts use imputation when a parent is voluntarily unemployed or underemployed, has deliberately reduced their income to lower support, or has failed to seek employment consistent with their education and work history. Courts typically impute income based on recent earnings history, local job market data, and the parent's training and experience. A parent who quits a $100,000/year job to earn $30,000 may still have child support calculated on the higher figure if the court finds the income reduction was voluntary.</td>
+    </div>
+  </div>
+
+  <!-- What to Do Next section -->
+  <div style="background: #eef1f9; border-left: 4px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; padding: 28px 32px; margin: 28px 0;">
+    <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--primary); margin-bottom: 14px;">What to Do With Your Estimate</h3>
+    <p style="font-size: 0.93rem; line-height: 1.75; color: #374151; margin-bottom: 12px;">Your calculator result gives you a reasonable ballpark for planning purposes. Here's how to use it effectively:</p>
+    <ul style="font-size: 0.93rem; line-height: 1.85; color: #374151; padding-left: 20px;">
+      <li><strong>If you're negotiating a separation agreement:</strong> Use the estimate as a baseline in conversations with your co-parent. Agreeing close to guideline amounts is far more likely to receive court approval quickly.</li>
+      <li><strong>If you're preparing for court:</strong> Gather your pay stubs, W-2s, and last two years of tax returns. Courts require verified income documentation. Self-employed parents should prepare a profit and loss statement.</li>
+      <li><strong>If you want a formal order:</strong> Contact your state's Child Support Services (CSS) office — they provide free enforcement, establishment, and modification services. This is the most cost-effective route if the other parent is cooperative.</li>
+      <li><strong>If there's a dispute:</strong> Consult a family law attorney. The initial consultation (often $200–$350/hour) will help you understand your state's specific formula and what to expect.</li>
+      <li><strong>If you believe the current order is wrong:</strong> File a modification petition. Document the change in circumstances carefully before filing. An attorney can help ensure the petition is filed correctly to maximize the chance of a favorable outcome.</li>
+    </ul>
   </div>
 
   <div style="background: #fff8e1; border: 1px solid #f9d54a; border-radius: var(--radius); padding: 24px 28px; margin: 32px 0;">
