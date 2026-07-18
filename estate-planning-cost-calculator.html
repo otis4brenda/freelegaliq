@@ -501,7 +501,7 @@
     const ctx = document.getElementById('ep-chart').getContext('2d');
     if (window._epChart) window._epChart.destroy();
     // Build chart data from selected docs
-    const chartLabels = [], chartData = [], chartColors = ['#1a2744','#c9a227','#10b981','#ef4444','#0ea5e9','#6b7280'];
+    const chartLabels = [], chartData = [], chartColors = ['#1a2744','#c9a227','#10b981','#ef4444','#2d6a8a','#6b7280'];
     let ci = 0;
     for (const [key, checked] of Object.entries(selected)) {
       if (!checked) continue;
