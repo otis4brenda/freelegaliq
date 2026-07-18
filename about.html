@@ -44,6 +44,11 @@
     .trust-list li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; color: #374151; line-height: 1.5; }
     .trust-list li:last-child { border-bottom: none; }
     .trust-list li span:first-child { font-size: 1.3rem; flex-shrink: 0; }
+    .team-member{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid var(--border);}
+    .team-member:last-child{border-bottom:none;}
+    .team-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-dark));display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+    .team-info h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:4px;}
+    .team-info p{font-size:0.88rem;color:var(--muted);margin:0;line-height:1.5;}
     footer { background: var(--text); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: white; }
@@ -63,10 +68,11 @@
 </nav>
 <div class="page-hero">
   <h1>About FreeLegalIQ</h1>
-  <p>We built the tool we wished existed when facing a legal situation without knowing what it would cost.</p>
+  <p>Independent legal cost calculators — no attorney referrals, no data selling, no affiliation with any law firm.</p>
 </div>
 <div class="container">
   <div class="content-card">
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:16px;">Written by the <strong><a href="/about.html" style="color:var(--primary);">FreeLegalIQ Editorial Team</a></strong> &nbsp;&middot;&nbsp; Last updated: <strong>July 2026</strong></p>
     <h2>Why We Built This</h2>
     <p>Legal costs are one of the most opaque expenses in American life. When you're facing a divorce, a DUI, an estate planning decision, or a business formation, you shouldn't have to call three attorneys just to get a ballpark number. The existing resources are either vague, buried behind lead-generation forms that hand your information to law firms, or produced by the very services trying to sell you something.</p>
     <p>FreeLegalIQ exists to change that. We built plain-language calculators that give you real cost estimates based on your state, your situation, and your choices — with no email required, no sales pitch, and no data sold to attorneys or legal services companies. You use the tool, get your answer, and walk away informed.</p>
@@ -81,6 +87,32 @@
       <li><span>🔄</span><span><strong>Kept current.</strong> Our content is reviewed and updated regularly to reflect current court fees, laws, and legal cost benchmarks.</span></li>
     </ul>
   </div>
+  <div class="content-card">
+    <h2>Our Editorial Team</h2>
+    <p>FreeLegalIQ is produced by a team of legal researchers and writers who specialize in making legal cost information accessible to ordinary people — not just those who can afford to consult an attorney just to find out what an attorney costs.</p>
+    <div class="team-member">
+      <div class="team-avatar">⚖️</div>
+      <div class="team-info">
+        <h3>FreeLegalIQ Editorial Team</h3>
+        <p>Our team of legal researchers and writers builds and maintains all calculators on this site. Each tool is sourced from official court fee schedules, USCIS publications, state government portals, and peer-reviewed attorney billing surveys. Content is reviewed quarterly and updated whenever material fee changes are published by courts or government agencies.</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar">📊</div>
+      <div class="team-info">
+        <h3>Research &amp; Data Sources</h3>
+        <p>Our primary data sources include: USCIS official fee schedules (uscis.gov), U.S. Courts bankruptcy fee tables (uscourts.gov), state court filing fee schedules, the Clio Legal Trends Report (attorney billing rates), National Center for State Courts (NCSC) data, and state-published traffic fine schedules. Full source citations are in our <a href="/editorial-policy.html" style="color:var(--primary);">Editorial Policy</a>.</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar">🔒</div>
+      <div class="team-info">
+        <h3>Complete Independence</h3>
+        <p>We are not affiliated with any law firm, attorney referral service, or online legal platform. We receive no referral fees or commissions from any legal service. Our calculators give you independent cost estimates — not estimates designed to route you into a sales funnel or connect you with a paid attorney directory.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="content-card">
     <h2>How We Make Money</h2>
     <p>FreeLegalIQ displays Google AdSense advertisements. These are standard display ads — not attorney lead forms, not affiliate links to specific legal services. The ads shown are based on your browser's ad settings and are managed entirely by Google. We do not share your personal information to serve ads.</p>
@@ -110,7 +142,7 @@
   </div>
 </div>
 <footer>
-  <p>© 2026 FreeLegalIQ · <a href="/">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of Use</a> · <a href="contact.html">Contact</a></p>
+  <p>© 2026 FreeLegalIQ &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="/about.html">About</a> &nbsp;·&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;·&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">FreeLegalIQ provides estimates for informational purposes only. Not legal advice. No attorney-client relationship is created by use of this site. Consult a licensed attorney in your state.</p>
 </footer>
 </body>
