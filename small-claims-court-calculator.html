@@ -22,6 +22,8 @@
   <title>Small Claims Court Calculator — Filing Fees &amp; Limits by State (2026) | FreeLegalIQ</title>
   <meta name="description" content="Free small claims court calculator — find filing fees, service costs, and maximum claim limits by state for 2026. Know exactly what it costs to sue before you file." />
   <link rel="canonical" href="https://freelegaliq.com/small-claims-court-calculator.html" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
   <script type="application/ld+json">
   [
@@ -85,7 +87,13 @@
     .page-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.85); }
     .page-hero p { font-size: 1rem; opacity: 0.95; max-width: 520px; margin: 0 auto; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
     .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
-    .calc-panel { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
+    /* ── Visual upgrade styles ── */
+    .result-hero-card { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; padding: 24px; border-top: 4px solid #7C3AED; margin-bottom: 16px; text-align: center; }
+    .result-hero-label { font-size: 14px; color: #6b7280; margin-bottom: 6px; }
+    .result-hero-number { font-size: 52px; font-weight: 800; color: #7C3AED; line-height: 1.1; }
+    .chart-wrap { display: none; text-align: center; margin: 20px 0 8px; }
+    .chart-wrap canvas { max-width: 280px; max-height: 280px; margin: 0 auto; display: block; }
+    .calc-panel { background: #FAF5FF; border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; margin-bottom: 28px; border: 1px solid var(--border); }
     .calc-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
     .calc-panel .subtitle { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
     .form-group { margin-bottom: 18px; }
@@ -273,8 +281,13 @@
 
     <div id="sc-result" class="result-box">
       <div id="sc-limit-badge" class="limit-badge"></div>
-      <div class="result-range" id="sc-range"></div>
-      <div class="result-label">Estimated Total Cost to File</div>
+      <div class="result-hero-card">
+        <div class="result-hero-label">Estimated Total Cost to File</div>
+        <div class="result-hero-number" id="sc-range"></div>
+      </div>
+      <div class="chart-wrap" id="sc-chart-wrap">
+        <canvas id="sc-chart" width="280" height="280"></canvas>
+      </div>
       <div class="result-breakdown">
         <div class="result-item"><div class="label">Filing Fee</div><div class="value" id="sc-filing"></div></div>
         <div class="result-item"><div class="label">Service of Process</div><div class="value" id="sc-service-cost"></div></div>
@@ -496,6 +509,20 @@
     document.getElementById('sc-atty').textContent = 'No (self-rep)';
     document.getElementById('sc-advice').textContent = advice;
     document.getElementById('sc-result').classList.add('show');
+
+    // ── Chart.js donut chart ──
+    const chartWrap = document.getElementById('sc-chart-wrap');
+    chartWrap.style.display = 'block';
+    const ctx = document.getElementById('sc-chart').getContext('2d');
+    if (window._scChart) window._scChart.destroy();
+    window._scChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Filing Fee', 'Service Fee', 'Your Claim Amount'],
+        datasets: [{ data: [Math.max((filingLo+filingHi)/2,1), Math.max((svcLo+svcHi)/2,1), Math.max(amount,1)], backgroundColor: ['#7C3AED','#10B981','#0EA5E9'], borderWidth: 2 }]
+      },
+      options: { animation: { duration: 600 }, plugins: { legend: { position: 'bottom' } }, cutout: '62%' }
+    });
   }
 
   function toggleFaq(btn) {
@@ -506,5 +533,6 @@
     if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
   }
 </script>
+<script>if(typeof lucide !== 'undefined') lucide.createIcons();</script>
 </body>
 </html>
