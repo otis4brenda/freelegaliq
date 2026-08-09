@@ -730,6 +730,19 @@
 </div><!-- /container -->
 
 
+<!-- National Average Scenario Box -->
+<div id="national-average-scenario" style="background:#f0fdf4;border:1px solid #86efac;border-left:4px solid #16a34a;border-radius:8px;padding:18px 22px;max-width:700px;margin:0 auto 28px;">
+  <strong style="color:#15803d;font-size:0.95rem;">📊 National Average Scenario — 2026</strong>
+  <p style="margin:10px 0 6px;font-size:0.9rem;color:#166534;">Two parents in an <strong>Income Shares state</strong> (the most common model), combined gross income of <strong>$7,500/month</strong>, one child, standard parenting time:</p>
+  <ul style="margin:0;padding-left:20px;font-size:0.9rem;color:#166534;line-height:1.8;">
+    <li>Combined support obligation per guideline tables: approximately <strong>$1,100–$1,300/month</strong></li>
+    <li>Split proportionally by income — if one parent earns 60%, they pay ~<strong>$660–$780/month</strong></li>
+    <li>National average child support received: approximately <strong>$5,500–$9,000/year</strong> (HHS OCSS 2024 data)</li>
+    <li>Hawaii highest state average: ~$16,656/year &nbsp;&bull;&nbsp; Tennessee among lowest: ~$4,274/year</li>
+  </ul>
+  <p style="margin:10px 0 0;font-size:0.82rem;color:#4d7c5e;">Sources: HHS Office of Child Support Services (OCSS) FY2024 report, NCSL state guideline database. Figures are national averages across all income levels and custody arrangements.</p>
+</div>
+
 <!-- E-E-A-T Attribution -->
 <div style="background:#f0f2f8;border-top:1px solid #d8dde9;padding:20px 24px;text-align:center;font-size:0.83rem;color:#6b7280;">
   <p>Written by the <strong><a href="/about.html" style="color:#1a2744;text-decoration:none;">FreeLegalIQ Editorial Team</a></strong> &nbsp;&middot;&nbsp; Last updated: <strong>August 2026</strong></p>
@@ -916,5 +929,35 @@
   }
 </script>
 <script>if(typeof lucide !== 'undefined') lucide.createIcons();</script>
+
+<!-- Embed snippet (for embed outreach) -->
+<!--
+  Copy and paste the following HTML to embed the Child Support Calculator on your site:
+
+  <iframe
+    src="https://freelegaliq.com/child-support-calculator.html?embed=1"
+    width="100%" height="620" frameborder="0"
+    title="Free Child Support Calculator"
+    loading="lazy">
+  </iframe>
+  <p style="font-size:13px;color:#666;">
+    Free calculator by <a href="https://freelegaliq.com/child-support-calculator.html" rel="nofollow">FreeLegalIQ</a>
+  </p>
+-->
+
+<script>
+  // Embed mode: hide nav/footer/ads, show only calculator + embed attribution
+  (function() {
+    if (new URLSearchParams(window.location.search).get('embed') === '1') {
+      var style = document.createElement('style');
+      document.documentElement.classList.add('embed-mode');
+      style.textContent = '.embed-mode nav, .embed-mode footer, .embed-mode .related-calcs, .embed-mode .faq-section, .embed-mode .content-section, .embed-mode .content-card, .embed-mode .adsbygoogle, .embed-mode #national-average-scenario { display:none !important; } .embed-mode body { background:#fff; padding:0; margin:0; } .embed-mode .embed-attribution { display:block !important; }';
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+<div class="embed-attribution" style="display:none;text-align:center;padding:8px;font-size:12px;color:#666;border-top:1px solid #e5e7eb;">
+  Free calculator by <a href="https://freelegaliq.com/child-support-calculator.html" style="color:#1a2744;">FreeLegalIQ</a>
+</div>
 </body>
 </html>
