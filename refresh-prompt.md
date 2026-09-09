@@ -33,18 +33,26 @@ FreeLegalIQ (https://freelegaliq.com) is a free legal cost calculator hub with 1
 Divorce, DUI, Personal Injury Settlement, Estate Planning, LLC Formation, Bankruptcy,
 Child Support, Speeding Ticket, Immigration Fees, and Small Claims.
 
-Monetized via Google AdSense (legal niche — very high CPC: $20–$120/click for attorney-adjacent
-keywords). SEO and Google AI Overview (AIO) optimization is the primary goal of each refresh.
+Monetized through clearly disclosed advertising and optional affiliate links. Reader utility,
+factual accuracy, and transparent limitations are the primary goals. Search presentation is
+secondary and must never drive unsupported claims, artificial dates, or repetitive text.
 
 ---
 
 ## RESEARCH STEP
 
-Before rewriting anything, use web_search to find:
-- Top Reddit, Quora, or social media questions about today's topic (e.g. "reddit divorce cost questions 2026")
-- Recent changes relevant to the topic (new state laws, filing fee updates, court rule changes)
-- Current attorney rate benchmarks for the practice area (e.g. "average DUI attorney cost 2026 by state")
-- "People Also Ask" (PAA) style questions from current Google search trends for this legal topic
+Do not change a page merely because it is next in a rotation. Refresh it only when an authoritative
+source changed, a documented factual or usability problem was found, or the page needs a substantive
+improvement that helps its intended reader.
+
+Before rewriting anything:
+- Start with the responsible court, legislature, regulator, or government agency.
+- Record the exact source URL, access date, and the claim or formula it supports.
+- Use secondary market reports only for genuinely variable prices, and label those figures as broad
+  market benchmarks rather than official rates.
+- Do not manufacture a current-year statistic, cite a report that has not been published, or convert
+  a general model into a claim that the calculator reproduces a state's "actual formula."
+- Social questions may reveal reader needs, but they are not authority for legal or fee claims.
 
 ---
 
@@ -110,7 +118,8 @@ identical — only update the text. Weave in current 2026 data:
 - Real-world cost drivers and how people reduce costs
 
 ### 3. FAQ Answers
-Rewrite all FAQ answers. Format rules:
+Change FAQ answers only when the answer requires a sourced correction or a substantive clarity
+improvement. Format rules:
 - 2–3 sentences max — snackable for AI Overviews and featured snippets
 - Direct answer first (a number or range), explanation second
 - Use specific numbers with qualifiers: "typically $3,000–$8,000," "most states require..."
@@ -128,11 +137,20 @@ Every calculator page has a `.disclaimer` div like this:
 current (e.g., updated dollar ranges) but the disclaimer must remain on every page.
 
 ### 5. Sitemap lastmod
-Update the `<lastmod>` date for this page in sitemap.xml to today's date (YYYY-MM-DD).
+Update `<lastmod>` only when the page received a substantive content, formula, source, or usability
+change. Never change a date solely as a freshness or ranking signal.
 
-### 6. Subtitle
-Update the visible subtitle inside `.calc-panel .subtitle` to include ` · Updated [Month YYYY]`
-at the end (e.g., "Free Divorce Cost Calculator · Updated June 2026").
+### 6. Review date
+Change a visible review date only after checking the affected claims and calculator assumptions.
+The date means "substantively reviewed," not "touched by automation."
+
+### 7. Required validation before commit
+- Confirm every visible FAQ question is paired with its intended answer.
+- Confirm FAQ structured data exactly matches the visible questions and answers.
+- Run the calculator with at least one ordinary input and one boundary input.
+- Confirm new internal links resolve and external source links point to the cited authority.
+- Confirm the disclaimer and methodology link remain visible.
+- Review the diff; reject unrelated changes.
 
 ---
 
@@ -178,4 +196,4 @@ case law, or specific legal strategy, regenerate using Claude with this prompt f
 | 6 | child-support-calculator.html | Child Support Calculator | child support calculation by state 2026 |
 | 7 | speeding-ticket-cost-calculator.html | Speeding Ticket Cost Calculator | speeding ticket cost by state 2026 |
 | 8 | immigration-fee-calculator.html | Immigration Fee Calculator | USCIS filing fees 2026 |
-| 9 | personal-injury-settlement-calculator.html | Small Claims Court Calculator | small claims court limit by state 2026 |
+| 9 | small-claims-court-calculator.html | Small Claims Court Calculator | small claims court limit by state 2026 |

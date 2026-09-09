@@ -26,30 +26,76 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522299769790775" crossorigin="anonymous"></script>
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Small Claims Court Calculator",
-      "url": "https://freelegaliq.com/small-claims-court-calculator.html",
-      "description": "Free calculator to estimate small claims court filing fees and total costs by state in 2026.",
-      "applicationCategory": "LegalApplication",
-      "operatingSystem": "Any",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type":"Question","name":"How much does it cost to file in small claims court?","acceptedAnswer":{"@type":"Answer","text":"Small claims court filing fees typically range from $30 to $150, depending on your state and the amount you're claiming. Most states use a tiered fee structure — the larger the claim, the higher the filing fee. Service fees (delivering the lawsuit to the defendant) add another $15–$80."}},
-        {"@type":"Question","name":"What is the maximum you can sue for in small claims court?","acceptedAnswer":{"@type":"Answer","text":"Small claims limits vary widely by state. California allows up to $12,500 for individuals, Texas allows $20,000, and some states cap claims at $5,000–$6,000. Check your state's specific limit — if your claim exceeds it, you'd need to file in a higher court or reduce your claim."}},
-        {"@type":"Question","name":"Do I need a lawyer for small claims court?","acceptedAnswer":{"@type":"Answer","text":"Generally no — small claims court is designed for self-representation without attorneys. In fact, some states prohibit attorneys from appearing in small claims court altogether. The process is intentionally simplified for everyday disputes like security deposits, property damage, unpaid loans, and contract disagreements."}},
-        {"@type":"Question","name":"What types of cases can be filed in small claims court?","acceptedAnswer":{"@type":"Answer","text":"Small claims court handles disputes involving money, not injunctions or criminal matters. Common cases include: security deposit disputes with landlords, property damage (car accidents, broken items), unpaid loans between individuals, breach of contract for services rendered, and defective products or services. You cannot use small claims court to sue for emotional distress alone or force someone to do something."}},
-        {"@type":"Question","name":"What happens if I win in small claims court but the defendant doesn't pay?","acceptedAnswer":{"@type":"Answer","text":"Winning a judgment doesn't guarantee you'll collect. If the defendant refuses to pay, you may need to take additional steps: wage garnishment (taking a percentage of their paycheck), bank account levy, or placing a lien on their property. These enforcement actions require filing additional paperwork and usually involve extra fees of $50–$200. Some judgments are difficult to collect if the defendant has no assets."}},
-        {"@type":"Question","name":"How long do I have to file a small claims case?","acceptedAnswer":{"@type":"Answer","text":"Each state has a statute of limitations — a deadline to file your claim. For written contracts, it's typically 4–6 years; for oral contracts, 2–4 years; and for property damage, 2–3 years. Missing the statute of limitations means your case will be dismissed regardless of merit. Always file as soon as possible to preserve evidence and witness availability."}}
-      ]
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Small Claims Court Calculator",
+    "url": "https://freelegaliq.com/small-claims-court-calculator.html",
+    "description": "Free calculator to estimate small claims court filing fees and total costs by state in 2026.",
+    "applicationCategory": "LegalApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
     }
-  ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does it cost to file in small claims court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small claims court filing fees typically range from $30 to $150, depending on your state and the amount you're claiming. Most states use a tiered fee structure — the larger the claim, the higher the filing fee. Service fees (delivering the lawsuit to the defendant) add another $15–$80."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum amount I can sue for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small claims limits vary widely by state. California allows up to $12,500 for individuals, Texas allows $20,000, and some states cap claims at $5,000–$6,000. Check your state's specific limit — if your claim exceeds it, you'd need to file in a higher court or reduce your claim."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a lawyer for small claims court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally no — small claims court is designed for self-representation without attorneys. In fact, some states prohibit attorneys from appearing in small claims court altogether. The process is intentionally simplified for everyday disputes like security deposits, property damage, unpaid loans, and contract disagreements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is \"service of process\" and how do I do it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Service of process is how you legally notify the defendant that they're being sued. The court won't hear your case until service is complete. Most states allow certified mail service, which is the cheapest option (around $15–$25) and is often handled by the court clerk. Alternatively, you can pay the local sheriff or a private process server to deliver documents in person, which costs $25–$80 but is harder to challenge. Keep your proof of service — the signed certified mail receipt or the process server's affidavit — as it will be required at your hearing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the defendant doesn't show up to court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If the defendant was properly served and doesn't appear, the judge will typically enter a default judgment in your favor for the amount you claimed (assuming your evidence supports it). A default judgment is just as enforceable as a judgment after a full hearing. However, defendants can sometimes move to vacate a default judgment if they have a valid reason for missing the hearing — so it's still important to have your documentation ready even if you expect the other party to be absent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a small claims case take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most small claims cases are heard within 30–70 days of filing. The timeline depends on court docket congestion — busier urban courts may take longer. The hearing itself is usually brief, often 15–30 minutes. Judges typically rule on the spot or within a few days. If you win, the defendant generally has 30 days to pay or appeal. Appeals are rare but do extend the process by several months."
+        }
+      }
+    ]
+  }
+]
   </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -168,6 +214,9 @@
   ]
 }
   </script>
+  <link rel="stylesheet" href="/assets/site-enhancements.css" />
+  <script src="/assets/site-enhancements.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -202,6 +251,7 @@
   <div class="calc-panel">
     <h2>Small Claims Cost Estimator</h2>
     <p class="subtitle">All calculations stay in your browser — nothing is sent or stored. · Updated 2026</p>
+    <p class="privacy-note"><strong>Private by design:</strong> your entries are calculated in this browser and are not sent to FreeLegalIQ.</p>
 
     <div class="form-group">
       <label>State</label>
@@ -302,6 +352,15 @@
     </div>
   </div>
 
+  <section class="decision-guide" data-decision-guide aria-labelledby="claims-path-title">
+    <h2 id="claims-path-title">Is Small Claims the Right Process to Investigate?</h2>
+    <p class="decision-intro">Choose the closest description. Court limits and eligible case types vary, so verify the result with the court that would hear the claim.</p>
+    <div class="decision-options"><button class="decision-option" type="button" aria-pressed="false" data-result="claims-likely">I want money within the local claim limit</button><button class="decision-option" type="button" aria-pressed="false" data-result="claims-other">I need someone ordered to act or stop</button><button class="decision-option" type="button" aria-pressed="false" data-result="claims-collect">I am unsure the defendant can pay</button></div>
+    <div class="decision-result" id="claims-likely"><h3>Small claims may be worth investigating</h3><p>Confirm venue, claim eligibility, filing deadline, service rules, and the evidence needed. Compare the likely recovery with filing, service, travel, and collection costs.</p></div>
+    <div class="decision-result" id="claims-other"><h3>A different court process may be required</h3><p>Small claims commonly focuses on money judgments. Injunctions, title disputes, or other nonmonetary relief may require another court or procedure.</p></div>
+    <div class="decision-result" id="claims-collect"><h3>Evaluate collectability before filing</h3><p>Winning a judgment does not guarantee payment. Research lawful collection options, exemptions, additional fees, and whether the defendant has reachable income or assets.</p></div>
+  </section>
+
   <div class="content-section">
     <p class="quick-answer">Filing in small claims court typically costs <strong>$30–$150</strong> in filing fees plus <strong>$15–$80</strong> for serving the defendant — a total out-of-pocket cost of under <strong>$200 in most states</strong>. If you win, you can usually recover these fees from the other party as part of your judgment.</p>
 
@@ -345,17 +404,17 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does it cost to file in small claims court? <span class="arrow">▼</span></button>
-      <div class="faq-a">Filing fees range from about $30 to $150 in most states, depending on the claim amount and state. Smaller claims (under $1,500) generally have lower fees. You'll also need to pay for service of process — delivering notice of the lawsuit to the defendant — which adds $15–$80 via certified mail or sheriff. Total out-of-pocket cost before the hearing is typically under $200. If you win, you can ask the court to include these fees in your judgment.</div>
+      <div class="faq-a">Small claims court filing fees typically range from $30 to $150, depending on your state and the amount you're claiming. Most states use a tiered fee structure — the larger the claim, the higher the filing fee. Service fees (delivering the lawsuit to the defendant) add another $15–$80.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What is the maximum amount I can sue for? <span class="arrow">▼</span></button>
-      <div class="faq-a">Limits vary significantly by state — from $3,500 in Arizona to $25,000 in Tennessee. Most states fall in the $5,000–$12,500 range. California allows individuals to sue for up to $12,500 but limits businesses to $6,250. If your claim exceeds the limit, you have two options: reduce your claim to fit within the limit (and waive the excess), or file in a higher court (which is more expensive and complex). You cannot split one claim into multiple small claims filings to get around the limit.</div>
+      <div class="faq-a">Small claims limits vary widely by state. California allows up to $12,500 for individuals, Texas allows $20,000, and some states cap claims at $5,000–$6,000. Check your state's specific limit — if your claim exceeds it, you'd need to file in a higher court or reduce your claim.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Do I need a lawyer for small claims court? <span class="arrow">▼</span></button>
-      <div class="faq-a">Generally no. Small claims court is specifically designed for self-representation. Some states (like California) actually prohibit attorneys from representing parties in small claims hearings — you must appear yourself. Even in states that allow attorneys, the cost of hiring one would typically exceed what you'd recover on a small claim. Bring organized documentation: contracts, receipts, photos, text messages, and any written correspondence. Organized evidence wins more cases than legal argument.</div>
+      <div class="faq-a">Generally no — small claims court is designed for self-representation without attorneys. In fact, some states prohibit attorneys from appearing in small claims court altogether. The process is intentionally simplified for everyday disputes like security deposits, property damage, unpaid loans, and contract disagreements.</div>
     </div>
 
     <div class="faq-item">
@@ -401,6 +460,7 @@
 <footer>
   <p>&copy; 2026 FreeLegalIQ &nbsp;&middot;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;&middot;&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed attorney in your state.</p>
+  <p><a href="/sources-and-methodology.html">Methodology &amp; Sources</a></p>
 </footer>
 
 <script>

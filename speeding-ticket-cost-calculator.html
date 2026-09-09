@@ -124,7 +124,7 @@
   </style>
   <!-- FAQPage Schema (AEO) -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -167,6 +167,38 @@
         "@type": "Answer",
         "text": "Ignoring a speeding ticket has serious consequences: late fees and penalties (often double or triple the original fine), a failure-to-appear warrant issued for your arrest, driver's license suspension, and hold on vehicle registration renewal. In some states, your car can be impounded if pulled over on a suspended license. A unpaid ticket doesn't disappear — it becomes a growing problem. If you can't afford the fine, most courts offer payment plans or community service alternatives. Contact the court before the due date."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "What are \"points\" on a driving record and when do they matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most states use a point system where traffic violations add points to your driving record. Minor speeding violations typically add 1–3 points; serious violations add 4–6 or more. When you accumulate a certain number of points within a specific time window (usually 1–3 years), consequences escalate: mandatory traffic school, license suspension, or revocation. New York, New Jersey, and Virginia have particularly strict point systems. Keeping a ticket off your record entirely — by attending traffic school or hiring a traffic attorney to negotiate a non-moving violation — avoids both the points and the insurance impact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is \"reckless driving\" vs. a speeding ticket?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reckless driving is a separate offense with consequences that vary by state and by the charge. Virginia Code § 46.2-862, for example, covers driving at least 20 mph over the applicable limit or faster than 85 mph regardless of the limit. Because the citation, response deadline, and possible criminal consequences are jurisdiction-specific, verify the charge with the issuing court and consider advice from a lawyer licensed in that state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take traffic school if I'm cited in a state other than where I live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on the issuing state's rules. Some states (like California and Florida) allow out-of-state drivers to take traffic school to dismiss the ticket. Others don't offer this option to out-of-state drivers. Additionally, even if the ticket is dismissed in the issuing state, your home state DMV may still record the underlying violation through the Driver License Compact (an agreement between 45 states to share traffic violation data). Check with both the court in the state where you were cited and your home state DMV to understand the full impact before deciding how to proceed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check if a speeding ticket is on my driving record?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can request a copy of your driving record (also called a Motor Vehicle Report or MVR) directly from your state's DMV, typically for a fee of $5–$25. Most states offer online access. Your insurance company also checks your MVR periodically, typically at each policy renewal. If you want to know whether a past ticket is still affecting your rates, review your driving record for violations within the past 3–5 years. Once a violation's lookback period expires and it's no longer on your MVR (or no longer being reported to insurers), your rate should return to normal at your next renewal."
+      }
     }
   ]
 }
@@ -192,6 +224,9 @@
   ]
 }
   </script>
+  <link rel="stylesheet" href="/assets/site-enhancements.css" />
+  <script src="/assets/site-enhancements.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -234,6 +269,7 @@
   <div class="calc-panel">
     <h2>Speeding Ticket True Cost Estimator</h2>
     <p class="subtitle">All calculations stay in your browser. · Updated 2026</p>
+    <p class="privacy-note"><strong>Private by design:</strong> your entries are calculated in this browser and are not sent to FreeLegalIQ.</p>
 
     <div class="form-row">
       <div class="form-group">
@@ -404,27 +440,27 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does a speeding ticket cost? <span class="arrow">▼</span></button>
-      <div class="faq-a">The national average speeding ticket fine is roughly $150 for the base penalty, but the total with court fees and state surcharges typically runs $150–$300 for going 10 mph over the limit on a highway. Going 20 mph over generally pushes costs to $300–$500 before insurance impacts. When you factor in the insurance rate increase — typically 20–30% per year for three to five years — the long-term cost of a single speeding ticket averages $1,000–$2,000 for most drivers.</div>
+      <div class="faq-a">The base fine for a typical speeding ticket ranges from $50–$300 depending on speed and state, but court fees, assessments, and surcharges typically add 50–200% on top of the base fine. California, for example, charges a base fine of $35 for going 1–15mph over, but after all fees and assessments, the actual payment is $230–$500+. Over 3 years including insurance increases, the total cost of a single moderate speeding ticket commonly runs $800–$2,500.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How long does a speeding ticket affect your insurance? <span class="arrow">▼</span></button>
-      <div class="faq-a">California, Illinois, and Texas have among the highest effective speeding ticket costs in the U.S. California charges $285–$399 for 10 mph over a highway limit, driven by multiple state assessment surcharges layered on top of the base fine. Illinois and Virginia can impose fines up to $2,500 for extreme-speed violations charged as misdemeanors. North Dakota ($110–$154) and Montana ($130–$182) are generally the cheapest states for a standard first-offense ticket.</div>
+      <div class="faq-a">Most speeding tickets affect your insurance rates for 3 years from the conviction date (not the ticket date). Serious violations — like reckless driving or excessive speeding (30+ mph over) — can affect rates for 5–7 years. The impact is greatest at your first renewal after the ticket appears on your driving record. By year 3–4, most minor violations drop off and rates normalize, assuming no additional violations.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Can I go to traffic school to avoid points? <span class="arrow">▼</span></button>
-      <div class="faq-a">A speeding conviction typically raises auto insurance premiums by 20–30% for three to five years, depending on your insurer and state. On a $2,000/year policy, that's an added $400–$600 annually — or $1,200–$3,000 over the surcharge period. High-risk drivers (SR22-required) can see far steeper increases. In some states, accumulating points from multiple tickets can trigger license suspension, which compounds costs further.</div>
+      <div class="faq-a">In most states, traffic school (defensive driving course) is available for minor violations (typically under 25mph over, no accidents). Completing traffic school typically: (1) masks the ticket from your insurance company for that policy period, (2) removes points from your driving record, or (3) results in case dismissal. Online traffic school courses typically cost $15–$100 and take 4–8 hours. Availability and rules vary by state — check with your state DMV or court for eligibility.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Is it worth hiring an attorney for a speeding ticket? <span class="arrow">▼</span></button>
-      <div class="faq-a">Going 20–25 mph over the limit moves you into a high-penalty tier in most states, where fines and points increase sharply. In many states, exceeding the limit by 25–30 mph crosses a threshold where officers can charge reckless driving — a criminal misdemeanor in states like Virginia and North Carolina — rather than a simple traffic infraction. Reckless driving convictions carry fines up to $2,500 and potential jail time, and remain on your criminal record.</div>
+      <div class="faq-a">For minor tickets (under $200 fine, 1–10mph over), probably not — traffic school is cheaper. For tickets involving significant speed (21+ over), commercial vehicle violations, or if you already have points on your record, a traffic attorney ($150–$400) is often worth it. Attorneys specialize in getting tickets reduced to non-moving violations (no points, no insurance impact) or dismissed entirely. The insurance savings alone often justify the attorney fee — a 20% rate increase on a $1,800/year policy saves $1,080 over 3 years.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What happens if I don't pay a speeding ticket? <span class="arrow">▼</span></button>
-      <div class="faq-a">Contesting a speeding ticket can be worthwhile if the potential fine is large or points would trigger an insurance surcharge. In most states, options include requesting mitigation (reducing the fine), attending traffic school to prevent points from appearing on your record, or a full not-guilty hearing. Traffic attorneys typically charge $150–$400 for representation, which may pay for itself if they can get the ticket dismissed or reduced to a non-moving violation — preserving your insurance rate. Consult a licensed traffic attorney in your state to evaluate your specific situation.</div>
+      <div class="faq-a">Ignoring a speeding ticket has serious consequences: late fees and penalties (often double or triple the original fine), a failure-to-appear warrant issued for your arrest, driver's license suspension, and hold on vehicle registration renewal. In some states, your car can be impounded if pulled over on a suspended license. A unpaid ticket doesn't disappear — it becomes a growing problem. If you can't afford the fine, most courts offer payment plans or community service alternatives. Contact the court before the due date.</div>
     </div>
 
     <div class="faq-item">
@@ -434,7 +470,7 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What is "reckless driving" vs. a speeding ticket? <span class="arrow">▼</span></button>
-      <div class="faq-a">Reckless driving is a criminal charge (misdemeanor or felony), not just a traffic infraction. It carries far more serious consequences: a permanent criminal record, potential jail time, much higher fines, mandatory license suspension, and dramatic insurance rate increases. In Virginia, any speed above 80 mph or 20+ mph over the limit automatically qualifies as reckless driving. In California, racing, excessive speed, or extreme road aggression can be charged as reckless driving. If you've been cited for reckless driving rather than a simple speeding ticket, hiring a criminal defense attorney immediately is essential — the consequences of a conviction are significantly more serious than a traffic infraction.</div>
+      <div class="faq-a">Reckless driving is a separate offense with consequences that vary by state and by the charge. Virginia Code § 46.2-862, for example, covers driving at least 20 mph over the applicable limit or faster than 85 mph regardless of the limit. Because the citation, response deadline, and possible criminal consequences are jurisdiction-specific, verify the charge with the issuing court and consider advice from a lawyer licensed in that state.</div>
     </div>
 
     <div class="faq-item">
@@ -489,6 +525,7 @@
 <footer>
   <p>&copy; 2026 FreeLegalIQ &nbsp;&middot;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;&middot;&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed attorney in your state.</p>
+  <p><a href="/sources-and-methodology.html">Methodology &amp; Sources</a></p>
 </footer>
 
 <script>

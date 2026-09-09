@@ -129,7 +129,7 @@
   </style>
   <!-- FAQPage Schema (AEO) -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -197,6 +197,9 @@
   ]
 }
   </script>
+  <link rel="stylesheet" href="/assets/site-enhancements.css" />
+  <script src="/assets/site-enhancements.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -231,6 +234,7 @@
   <div class="calc-panel">
     <h2>LLC Formation Cost Estimator</h2>
     <p class="subtitle">Uses real 2026 state filing fees. All calculations stay in your browser. · Updated August 2026</p>
+    <p class="privacy-note"><strong>Private by design:</strong> your entries are calculated in this browser and are not sent to FreeLegalIQ.</p>
 
     <div class="form-group">
       <label>State of Formation</label>
@@ -338,7 +342,7 @@
     <p>Forming a legal LLC requires at minimum four things: (1) Filing Articles of Organization with your state Secretary of State — costs range from $35 (Montana) to $500 (Massachusetts) depending on state; (2) Designating a registered agent with a physical in-state address, available during business hours to receive legal documents; (3) Creating an Operating Agreement documenting ownership, management, and profit-sharing — required by law in California, Delaware, Maine, Missouri, Nebraska, and New York, and strongly advisable everywhere else; and (4) Obtaining a Federal EIN (Employer Identification Number) directly from IRS.gov — always free, despite numerous third-party services charging $50–$100 for what is a zero-cost task. A dedicated business bank account is also recommended to maintain proper separation between personal and business finances, as most banks require your Operating Agreement and EIN to open one. In New York, a mandatory publication requirement adds $1,000–$2,000 in local newspaper advertising fees — an often-overlooked cost that catches many new business owners off guard.</p>
 
     <h3>Best States to Form an LLC in 2026</h3>
-    <p>Wyoming consistently ranks as the top formation-friendly state in 2026: $100 filing fee, $60/year renewal, no state income tax, some of the strongest charging order protections in U.S. LLC law, and no requirement to publicly disclose member names. Delaware remains the choice for businesses expecting outside investment, venture capital, or eventual acquisition — its Court of Chancery and well-developed business case law provide unmatched legal predictability. New Mexico attracts owners seeking anonymity: it allows anonymous member LLCs with no annual report requirement and no public member disclosure. For most small business owners operating within a single state, however, forming in your home state is generally simpler — "foreign qualifying" an out-of-state LLC where you actually operate requires paying your home state's fees anyway, effectively doubling the filing and annual report costs. California remains one of the most expensive states to maintain an LLC over time: only $70 to form, but the $800/year minimum franchise tax applies from the first year regardless of whether the business earns any income. Consulting a licensed attorney or CPA is advisable before choosing a formation state if you plan to operate across multiple states.</p>
+    <p>For many small businesses operating in one state, forming there is the simplest starting point. Forming elsewhere may still require foreign registration, fees, reports, a registered agent, and taxes where the business actually operates. Delaware, Wyoming, and New Mexico have different filing, privacy, court, and maintenance features, but no state is universally “best.” Compare total obligations—not just the initial fee—and consult a licensed attorney or tax professional before choosing a state for a multistate or investment-backed business.</p>
   </div>
 
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -349,27 +353,27 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does it cost to form an LLC? <span class="arrow">▼</span></button>
-      <div class="faq-a">State filing fees for LLC formation range from $35 (Montana) to $500 (Massachusetts), with the national average at approximately $132 across all 50 states. Most states fall between $50 and $150 for the initial articles of organization filing. Adding a registered agent service ($100–$300/year) and an EIN—free from the IRS—typically brings total first-year costs to $150–$600 in most states.</div>
+      <div class="faq-a">LLC formation costs range from $35 (Montana) to $500+ (Massachusetts) just for the state filing fee. When you add a registered agent service ($100–$200/year), an operating agreement ($50–$300 for a template or $500–$1,500 for an attorney-drafted version), and the EIN (free from the IRS), total first-year costs typically run $300–$1,000 DIY or $800–$2,500 with attorney assistance.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Do I need an attorney to form an LLC? <span class="arrow">▼</span></button>
-      <div class="faq-a">Montana has the lowest filing fee at $35, followed by Kentucky ($40), Arkansas ($45), and eight states tied at $50: Arizona, Colorado, Hawaii, Iowa, Michigan, Mississippi, Missouri, and New Mexico. However, if you operate your business in a different state, you'll generally need to register as a foreign LLC there as well—paying both states' fees—which eliminates most of the savings from forum shopping.</div>
+      <div class="faq-a">For a simple single-member LLC, most people can DIY the formation using their state's Secretary of State website plus free or low-cost operating agreement templates. For multi-member LLCs, LLCs with complex ownership structures, or LLCs in regulated industries, an attorney-drafted operating agreement is worth the investment — it prevents costly disputes between members later. Many online formation services (LegalZoom, ZenBusiness, Incfile) offer middle-ground options for $150–$500.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What is a registered agent and do I need one? <span class="arrow">▼</span></button>
-      <div class="faq-a">California's initial filing fee is relatively modest at $70, but it imposes a mandatory $800/year franchise tax on all LLCs regardless of revenue, making it the most expensive state for ongoing LLC maintenance. First-year total costs in California typically reach $890 or more. By contrast, Arizona, Missouri, and New Mexico charge no annual LLC fee at all, making them among the cheapest states for ongoing compliance.</div>
+      <div class="faq-a">A registered agent is a person or service with a physical address in your state who receives legal documents (lawsuits, government notices) on behalf of your LLC. Every LLC is legally required to have one. You can act as your own registered agent if you have a physical address in the state (not a P.O. box) and are available during business hours. Many business owners use a registered agent service ($100–$200/year) for privacy (keeps your home address off public records) and reliability.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Is an operating agreement required? <span class="arrow">▼</span></button>
-      <div class="faq-a">Most states process online LLC filings within 3–7 business days. States like Colorado and Delaware offer 1–2 day processing. Delaware's 2026 franchise tax increased to $400/year (up from $300 under HB 400), so while it remains popular for investor-backed startups due to its well-developed corporate law, its ongoing cost has risen. Wyoming is increasingly popular for privacy protection, no state income tax, and straightforward compliance at $100 to file and $60/year.</div>
+      <div class="faq-a">California, Delaware, Maine, Missouri, Nebraska, and New York legally require operating agreements. All other states strongly recommend having one. Even for a single-member LLC, an operating agreement: establishes your LLC as separate from you personally (important for liability protection), documents your management structure, and is required by most banks to open a business account. Without one, your state's default LLC rules govern your business — which may not match your intentions.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What are the ongoing annual costs of maintaining an LLC? <span class="arrow">▼</span></button>
-      <div class="faq-a">Most single-member LLCs with simple structures can be formed without an attorney by filing articles of organization directly through the state's online portal. However, consulting a licensed business attorney is generally advisable for multi-member LLCs, complex profit-sharing arrangements, businesses in regulated industries, or any situation where liability protection is mission-critical. Attorney fees for LLC formation assistance typically run $500–$1,500 depending on complexity and location.</div>
+      <div class="faq-a">Most states require an annual report (or biennial report) with a filing fee ranging from $0 (New Mexico, Arizona) to $800+ (California franchise tax). Registered agent service adds $100–$200/year. Business license renewals vary by city/county. Accounting and tax preparation for an LLC that elects S-Corp status costs $800–$2,000/year. California's $800 minimum franchise tax applies even if the LLC has no income, making it one of the most expensive states to maintain an LLC.</div>
     </div>
   </div>
 
@@ -400,6 +404,7 @@
 <footer>
   <p>&copy; 2026 FreeLegalIQ &nbsp;&middot;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;&middot;&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed attorney in your state.</p>
+  <p><a href="/sources-and-methodology.html">Methodology &amp; Sources</a></p>
 </footer>
 
 <script>
@@ -537,7 +542,7 @@
 
     let advice = '';
     if (state === 'ca') {
-      advice = '⚠️ California\'s $800 annual franchise tax applies even if your LLC earns nothing. If you\'re just starting out with low revenue, consider whether a Wyoming LLC (operating in California as a foreign LLC) could reduce this burden — consult a CPA.';
+      advice = '⚠️ California may impose annual tax and filing obligations even when revenue is low. Forming in another state generally does not remove California obligations when the business operates there and may add foreign-registration costs. Verify the current rules with California agencies and a qualified tax professional.';
     } else if (state === 'ny') {
       advice = '⚠️ New York requires LLCs to publish a notice of formation in two local newspapers for 6 consecutive weeks — an often-overlooked requirement that can cost $1,000–$2,000 depending on the county.';
     } else if (state === 'wy' || state === 'nm' || state === 'de') {

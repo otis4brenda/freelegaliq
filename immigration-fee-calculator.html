@@ -130,7 +130,7 @@
   </style>
   <!-- FAQPage Schema (AEO) -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -163,7 +163,7 @@
       "name": "What is premium processing and is it worth it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Premium processing (Form I-907, $2,805) guarantees USCIS will take action on your petition within 15 business days — or refund the fee. It's available for H-1B, L-1, O-1, and certain green card filings. Important June 2026 update: a federal judge struck down the $100,000 H-1B employer fee on June 12, 2026 (DOJ is appealing — status pending litigation). The $2,805 premium processing fee remains in effect and is worth it when timing or business need justifies the cost."
+        "text": "Premium processing uses Form I-907 and is available only for designated classifications. The fee and response period depend on the requested classification and can change. A response may be an approval, denial, request for evidence, notice of intent to deny, or investigation—not necessarily a final approval. Confirm eligibility, the current fee, and the applicable time period on the official USCIS Form I-907 page."
       }
     },
     {
@@ -171,7 +171,39 @@
       "name": "Do I need an immigration attorney?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Simple applications (DACA renewal, green card renewal/I-90) are often manageable DIY with careful attention to instructions. However, with immigration court fees jumping from $130 to $1,670 in June 2026 and regulations changing rapidly, the cost of errors is higher than ever — attorney representation significantly reduces that risk. For naturalization, green card applications, family petitions, or any case with complications, an attorney is strongly advisable. Nonprofit legal services and accredited representatives offer lower-cost options — search uscis.gov for free and low-cost legal help in your area."
+        "text": "Whether to get help depends on the form and the applicant's history. Prior denials, arrests, removal proceedings, unlawful presence, or other complications can carry serious consequences. A licensed immigration attorney or DOJ-accredited representative can assess the facts; USCIS and DOJ publish directories for authorized and low-cost help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between adjustment of status and consular processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adjustment of status (AOS) using Form I-485 is for people who are already in the US on a valid visa and want to become permanent residents without leaving. Consular processing is for people who are outside the US — they apply through a US embassy or consulate in their home country. Both paths lead to a green card, but use different forms, fees, and timelines. AOS allows the applicant to remain in the US (and work, with an approved EAD) while the case is pending. Consular processing is often used when the person is outside the US or when AOS is not available due to visa overstay or entry without inspection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to apply for citizenship from a green card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The path from a green card to citizenship (naturalization) requires being a lawful permanent resident for 3 years (if married to a US citizen) or 5 years, demonstrating good moral character, and passing the English and civics tests. The N-400 filing fee is $760 (2026). With an immigration attorney, total costs typically run $2,500–$4,000. The civics test covers 100 questions about US history and government — free study materials are available at uscis.gov. Many libraries and community organizations also offer free citizenship prep classes. Fee waivers are available for eligible low-income applicants via Form I-912."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Request for Evidence (RFE) and what does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Request for Evidence (RFE) is a notice from USCIS asking for additional documentation to support your case. RFEs are common — they're issued in approximately 20–30% of H-1B petitions and many family and employment-based green card cases. Responding to an RFE typically costs $500–$2,500 in additional attorney fees depending on complexity. Ignoring an RFE or responding inadequately results in denial. If you receive an RFE, contact an immigration attorney immediately if you're not already working with one — the deadline is typically 87 days and the quality of the response significantly affects the outcome."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the income requirements for sponsoring a family member's green card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To sponsor a family member for a green card, the US petitioner (sponsor) must file an Affidavit of Support (Form I-864) showing income of at least 125% of the federal poverty guideline for the household size (including the immigrant). In 2026, that's approximately $20,800/year for a household of 2, $26,200 for a household of 3. If income is insufficient, a joint sponsor can co-sign the I-864. The I-864 is a legally enforceable contract — if the immigrant receives certain public benefits, the sponsor can be sued for reimbursement by federal or state agencies. The obligation generally ends when the immigrant becomes a US citizen or has worked for 40 Social Security-qualifying quarters."
       }
     }
   ]
@@ -198,6 +230,9 @@
   ]
 }
   </script>
+  <link rel="stylesheet" href="/assets/site-enhancements.css" />
+  <script src="/assets/site-enhancements.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -222,7 +257,7 @@
   <div class="hero-bg"></div>
   <div class="hero-content">
   <h1>🌎 Immigration Fee Calculator</h1>
-  <p>2026 USCIS filing fees for green cards, citizenship, visas, and DACA — plus breaking immigration court updates.</p>
+  <p>Planning estimates for common USCIS filings, with official verification links.</p>
 </div>
 </div>
 
@@ -233,13 +268,14 @@
   <div style="background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 28px; box-shadow: var(--shadow);">
     <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 14px;">Understanding USCIS Immigration Fees in 2026</h2>
     <p style="font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 14px;">USCIS (U.S. Citizenship and Immigration Services) implemented its largest fee increase in agency history on April 1, 2024 — an average increase of approximately 26% across most form types. These fee levels remain in effect as of 2026. The increases were driven by the agency's need to fund operations without relying on Congressional appropriations, as USCIS is almost entirely fee-funded. For applicants, this means planning budgets carefully before filing any immigration application, since fees are generally non-refundable even if the application is denied.</p>
-    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 14px;">Beyond the USCIS filing fees themselves, most immigration cases involve additional costs: biometric services fees (included in most current filing fees), immigration attorney fees ($1,500–$5,000 for most standard cases), medical examination costs (required for green card applicants), and for court-based cases, EOIR (immigration court) fees — which jumped dramatically to $1,670 in June 2026 from the prior $130 level. Immigration law is also one of the most frequently changing areas of US law; regulations, policies, and even the availability of certain programs can shift significantly with each administration.</p>
-    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151;"><strong>Important 2026 update:</strong> On June 12, 2026, a federal judge struck down the $100,000 H-1B employer registration fee that had been proposed by the DOJ. The DOJ is appealing that ruling. Always verify current fee amounts at <strong>uscis.gov/fees</strong> before filing any application, as fees can change with relatively short notice.</p>
+    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 14px;">Beyond USCIS filing fees, a case may involve medical examinations, document translation, travel, legal help, or separate Department of State or immigration-court charges. Which costs apply depends on the process and the applicant's facts.</p>
+    <p style="font-size: 0.95rem; line-height: 1.75; color: #374151;"><strong>Verify before paying:</strong> immigration fees, forms, editions, eligibility rules, and filing addresses can change. Use the official USCIS fee calculator and the instructions for each form immediately before filing.</p>
   </div>
 
   <div class="calc-panel">
     <h2>USCIS Fee & Immigration Cost Estimator</h2>
-    <p class="subtitle">Based on USCIS fees (April 2024 rule) + June 2026 immigration court updates. All calculations stay in your browser. · Updated August 2026</p>
+    <p class="subtitle">Planning estimates based on published USCIS fees. Verify every amount before filing. All calculations stay in your browser. · Updated September 2026</p>
+    <p class="privacy-note"><strong>Private by design:</strong> your entries are calculated in this browser and are not sent to FreeLegalIQ.</p>
 
     <div class="form-group">
       <label>Application / Petition Type</label>
@@ -288,12 +324,12 @@
       <div class="fee-list" id="imm-fee-list"></div>
       <p id="imm-processing" style="margin-top:14px; font-size:0.88rem; font-weight:600; color:var(--primary);"></p>
       <p id="imm-advice" style="margin-top:8px; font-size:0.88rem; color:#374151; line-height:1.6;"></p>
-      <div class="disclaimer">⚠️ Immigration fees are changing rapidly in 2026. Immigration court (EOIR) filing fees jumped from $130 to $1,670 in June 2026. The $100,000 H-1B employer surcharge was struck down by a federal judge on June 12, 2026 (DOJ appealing). USCIS fees reflect the April 2024 final rule — always verify current fees at <strong>uscis.gov</strong> before filing. Immigration law is complex — errors can have serious consequences. Consult a qualified immigration attorney.</div>
+      <div class="disclaimer">⚠️ This is a planning estimate, not a filing quote. Fees, form editions, eligibility, and filing instructions can change, and other agencies may charge separate fees. Verify the result with the official USCIS fee calculator and form instructions. Immigration errors can have serious consequences; consider a licensed immigration attorney or DOJ-accredited representative.</div>
     </div>
   </div>
 
   <div class="content-section">
-    <p class="quick-answer">USCIS filing fees in 2026 range from <strong>$365 to $1,440</strong> for the most common immigration applications. The I-485 (Adjustment of Status/green card) costs $1,440; the N-400 (naturalization) is $710 online or $760 by paper, with a reduced fee of $380 available for qualifying lower-income applicants. Online filing saves $50 on most forms, and biometric services are now bundled into the base fee — no separate $85 biometrics charge for most applications.</p></p></p>
+    <p class="quick-answer">USCIS filing fees in 2026 range from <strong>$365 to $1,440</strong> for the most common immigration applications. The I-485 (Adjustment of Status/green card) costs $1,440; the N-400 (naturalization) is $710 online or $760 by paper, with a reduced fee of $380 available for qualifying lower-income applicants. Online filing saves $50 on most forms, and biometric services are now bundled into the base fee — no separate $85 biometrics charge for most applications.</p>
 
     <h3>2026 USCIS & Immigration Fee Quick Reference</h3>
     <table class="fee-table">
@@ -325,27 +361,27 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does it cost to become a US citizen in 2026? <span class="arrow">▼</span></button>
-      <div class="faq-a">The most common USCIS fees in 2026 are: I-485 (green card/Adjustment of Status) — $1,440; N-400 (naturalization) — $710 online or $760 by paper; I-130 (family petition) — $625 online or $675 by paper; I-765 (work permit/EAD) — $470 online or $520 by paper; I-90 (green card renewal) — $365 online or $415 by paper; and I-751 (remove conditions) — $700 online or $750 by paper. Biometric services are now bundled into the base fee for most forms, eliminating the former separate $85 biometrics charge.</div>
+      <div class="faq-a">The USCIS filing fee for naturalization (Form N-400) is $760 as of 2024/2025, which includes the biometric services fee. You must be a lawful permanent resident (green card holder) for at least 3 years (if married to a US citizen) or 5 years before applying. An immigration attorney typically charges $1,500–$3,000 to prepare and file the naturalization application. Total cost with attorney: approximately $2,300–$4,000.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does a green card cost? <span class="arrow">▼</span></button>
-      <div class="faq-a">As of 2026, USCIS offers a $50 online filing discount on most major forms, including the I-130, N-400, I-765, I-90, I-140, and I-751. The discount does not apply to the I-485 (Adjustment of Status), the I-131 (travel document/advance parole), or premium processing fees. Filing online through the myUSCIS portal also generally results in faster processing and confirmation of receipt.</div>
+      <div class="faq-a">The USCIS filing fee for an I-485 Adjustment of Status (green card for those already in the US) is $1,440 for applicants 18 and older (effective April 2024), which includes biometrics. If filing a concurrent I-130 family petition, add $675. An immigration attorney typically charges $2,500–$6,000 for the full green card process. Total out-of-pocket: approximately $4,000–$9,000 depending on complexity. Consular processing (for those outside the US) uses different forms and fees.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does DACA renewal cost? <span class="arrow">▼</span></button>
-      <div class="faq-a">The N-400 naturalization fee is $710 for online filing or $760 for paper filing in 2026. A reduced fee of $380 is available for applicants whose household income is at or below 400% of the Federal Poverty Guidelines — you must file Form I-942 to request this reduced fee. Note: in June 2026, DHS proposed increasing the N-400 fee to $1,280 (online) or $1,330 (paper) and eliminating the reduced fee option; this change is still in the proposed rulemaking stage and not yet in effect. Always verify current fees at USCIS.gov before filing.</div>
+      <div class="faq-a">DACA renewal (Form I-821D + Form I-765) costs $580 in USCIS filing fees as of the 2024 fee update. The I-821D alone has no separate fee — the $580 covers both forms when filed together. An immigration attorney or accredited representative may charge $300–$800 to assist with the renewal. DACA renewal must be filed before your current work permit expires. Check uscis.gov for current DACA eligibility and filing guidance, as DACA status has been subject to litigation.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What is premium processing and is it worth it? <span class="arrow">▼</span></button>
-      <div class="faq-a">The One Big Beautiful Bill Act (signed July 2025) added several new mandatory fees effective in 2026: a $100 initial asylum filing fee, a $100 annual asylum fee for each year an application remains pending, a $24 I-94 fee, and higher employment authorization fees for certain visa categories. Additionally, a new Visa Integrity Fee (VIF) of $250 per person generally applies to most nonimmigrant visa applicants. These fees typically cannot be waived and are on top of the standard USCIS regulatory filing fees.</div>
+      <div class="faq-a">Premium processing uses Form I-907 and is available only for designated classifications. The fee and response period depend on the requested classification and can change. A response may be an approval, denial, request for evidence, notice of intent to deny, or investigation—not necessarily a final approval. Confirm eligibility, the current fee, and the applicable time period on the official USCIS Form I-907 page.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Do I need an immigration attorney? <span class="arrow">▼</span></button>
-      <div class="faq-a">USCIS filing fees in 2026 cannot generally be refunded once the application is accepted for processing, even if the application is later denied. Fee waivers are available for certain low-income applicants filing specific forms — the I-912 (Request for Fee Waiver) can be submitted with eligible applications if household income is at or below 150% of the Federal Poverty Guidelines. It is generally advisable to consult a licensed immigration attorney or accredited representative to confirm current fees, eligibility, and the correct forms before filing, as fee rules and eligibility requirements change frequently.</div>
+      <div class="faq-a">Whether to get help depends on the form and the applicant's history. Prior denials, arrests, removal proceedings, unlawful presence, or other complications can carry serious consequences. A licensed immigration attorney or DOJ-accredited representative can assess the facts; USCIS and DOJ publish directories for authorized and low-cost help.</div>
     </div>
 
     <div class="faq-item">
@@ -410,6 +446,7 @@
 <footer>
   <p>&copy; 2026 FreeLegalIQ &nbsp;&middot;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;&middot;&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed attorney in your state.</p>
+  <p><a href="/sources-and-methodology.html">Methodology &amp; Sources</a></p>
 </footer>
 
 <script>

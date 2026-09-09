@@ -130,7 +130,7 @@
   </style>
   <!-- FAQPage Schema (AEO) -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -139,7 +139,7 @@
       "name": "How much does it cost to file Chapter 7 bankruptcy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The federal court filing fee for Chapter 7 is $338. Attorney fees typically add $1,200–$3,500 depending on your location and case complexity. Mandatory credit counseling costs $20–$100, and the required debtor education course costs $15–$100. Total cost with an attorney: approximately $1,600–$4,000. Pro se filing (without attorney): approximately $400–$550. With bankruptcy filings surging in 49 of 50 states in 2026 (American Bankruptcy Institute), courts in many regions are seeing extended wait times — factor this into your timeline."
+        "text": "The federal court filing fee for Chapter 7 is $338. Attorney and required-course costs vary by provider, location, and case complexity. Some qualifying individuals may request installments or a fee waiver. Confirm the current fee and eligibility rules with the U.S. Courts before filing."
       }
     },
     {
@@ -147,7 +147,7 @@
       "name": "What's the difference between Chapter 7 and Chapter 13?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 7 eliminates most unsecured debt in 3–6 months through liquidation; you must pass an income means test and may lose non-exempt assets. Chapter 13 lets you keep assets while following a 3–5 year court-approved repayment plan — especially valuable for homeowners facing foreclosure. In 2026, the ABI confirmed filings are surging in 49 of 50 states, with Chapter 13 increasingly popular among homeowners protecting equity built during recent appreciation cycles. Chapter 7 is faster and cheaper; Chapter 13 protects more assets."
+        "text": "Chapter 7 is a liquidation process that may discharge qualifying debts; eligibility and exemptions determine whether property is at risk. Chapter 13 uses a court-approved repayment plan, generally lasting three to five years. The better fit depends on income, debts, property, goals, and local law."
       }
     },
     {
@@ -155,7 +155,7 @@
       "name": "How long does bankruptcy stay on my credit report?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 7 bankruptcy stays on your credit report for 10 years from the filing date. Chapter 13 stays on your credit report for 7 years. Both significantly impact your credit score — typically dropping it 130–240 points. However, many filers see their credit scores begin recovering within 2–3 years through responsible credit use after discharge. By year 4–5, many filers have scores in the 650–700 range, qualifying for basic credit products again."
+        "text": "A bankruptcy can remain on a credit report for years; Chapter 7 may be reported for up to 10 years and Chapter 13 for up to 7 years. The score impact and recovery timeline depend on the person's credit history and later activity, so a calculator cannot predict a specific point change."
       }
     },
     {
@@ -198,6 +198,9 @@
   ]
 }
   </script>
+  <link rel="stylesheet" href="/assets/site-enhancements.css" />
+  <script src="/assets/site-enhancements.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -232,6 +235,7 @@
   <div class="calc-panel">
     <h2>Bankruptcy Cost Estimator</h2>
     <p class="subtitle">Federal filing fees are fixed. Attorney fees vary by region. All calculations stay in your browser. · Updated August 2026</p>
+    <p class="privacy-note"><strong>Private by design:</strong> your entries are calculated in this browser and are not sent to FreeLegalIQ.</p>
 
     <div class="form-group">
       <label>Bankruptcy Type</label>
@@ -294,14 +298,33 @@
     </div>
   </div>
 
+  <section class="decision-guide" data-decision-guide aria-labelledby="bankruptcy-path-title">
+    <h2 id="bankruptcy-path-title">Narrow the Bankruptcy Paths to Discuss</h2>
+    <p class="decision-intro">Choose the statement closest to your situation. This does not determine eligibility; it identifies the path and questions worth discussing with a qualified bankruptcy professional.</p>
+    <div class="decision-options">
+      <button class="decision-option" type="button" aria-pressed="false" data-result="bk-path-7">Most debt is unsecured, and income is limited</button>
+      <button class="decision-option" type="button" aria-pressed="false" data-result="bk-path-13">I have regular income and need time to catch up</button>
+      <button class="decision-option" type="button" aria-pressed="false" data-result="bk-path-alt">I may be able to repay with changed terms</button>
+    </div>
+    <div class="decision-result" id="bk-path-7"><h3>Chapter 7 may be the first path to investigate</h3><p>It can address many unsecured debts relatively quickly, but eligibility depends on the means test and state exemption rules. Ask about assets, secured debts, recent transfers, and debts that cannot be discharged.</p></div>
+    <div class="decision-result" id="bk-path-13"><h3>Chapter 13 may be the first path to investigate</h3><p>A three-to-five-year plan may help someone with reliable income keep certain property or catch up on eligible arrears. Ask whether the proposed payment is sustainable and which debts survive the plan.</p></div>
+    <div class="decision-result" id="bk-path-alt"><h3>Compare non-bankruptcy alternatives before filing</h3><p>A nonprofit debt-management plan, direct hardship arrangement, or negotiated repayment may be worth comparing. Review total cost, tax consequences, creditor participation, and the effect on credit before choosing.</p></div>
+  </section>
+
+  <section class="comparison-panel" aria-labelledby="bankruptcy-compare-title">
+    <h2 id="bankruptcy-compare-title">Chapter 7 vs. Chapter 13 at a Glance</h2>
+    <div class="comparison-scroll"><table class="comparison-table"><thead><tr><th>Question</th><th>Chapter 7</th><th>Chapter 13</th></tr></thead><tbody><tr><td>Typical structure</td><td>Liquidation process</td><td>Court-supervised repayment plan</td></tr><tr><td>Typical duration</td><td>Often several months</td><td>Usually 3–5 years</td></tr><tr><td>Income consideration</td><td>Means-test eligibility applies</td><td>Regular income is generally needed for a feasible plan</td></tr><tr><td>Property concern</td><td>Nonexempt property may be at risk</td><td>May provide a path to retain property while paying under the plan</td></tr></tbody></table></div>
+    <p class="method-note"><strong>Use this comparison as a question-builder:</strong> exemptions, dischargeability, eligibility, and outcomes vary by facts and jurisdiction.</p>
+  </section>
+
   <div class="content-section">
-    <p class="quick-answer">Filing for bankruptcy in 2026 typically costs <strong>$1,500–$4,500 total for Chapter 7</strong> and <strong>$4,000–$8,000 for Chapter 13</strong>, based on national averages. Court filing fees are set by federal law at $338 (Chapter 7) and $313 (Chapter 13) — the same nationwide. Attorney fees — optional but strongly recommended — generally run $1,000–$3,500 for Chapter 7 and $2,500–$5,000 for Chapter 13, depending on case complexity and region. Low-income filers may qualify for a Chapter 7 fee waiver if household income is below 150% of the federal poverty level.</p></p></p>
+    <p class="quick-answer">Filing for bankruptcy in 2026 typically costs <strong>$1,500–$4,500 total for Chapter 7</strong> and <strong>$4,000–$8,000 for Chapter 13</strong>, based on national averages. Court filing fees are set by federal law at $338 (Chapter 7) and $313 (Chapter 13) — the same nationwide. Attorney fees — optional but strongly recommended — generally run $1,000–$3,500 for Chapter 7 and $2,500–$5,000 for Chapter 13, depending on case complexity and region. Low-income filers may qualify for a Chapter 7 fee waiver if household income is below 150% of the federal poverty level.</p>
 
     <h3>Chapter 7 vs Chapter 13: Which Is Right for You?</h3>
-    <p>Chapter 7 ("liquidation bankruptcy") eliminates most unsecured debt — credit cards, medical bills, personal loans — in approximately 3–6 months. You must pass the means test (income below your state's median or pass a disposable income calculation), and non-exempt assets can be liquidated to pay creditors. With the ABI confirming 2026 bankruptcy filings surging in 49 of 50 states, courts in many regions are seeing extended processing times — a factor to consider when planning your timeline. Chapter 13 ("reorganization bankruptcy") lets you keep assets while repaying some or all debt over a 3–5 year plan — particularly valuable for homeowners facing foreclosure. Chapter 7 is faster and cheaper; Chapter 13 offers more flexibility but requires sustained income.</p>
+    <p>Chapter 7 is a liquidation process that may discharge qualifying unsecured debt. Eligibility, exemptions, and the facts of the case determine whether property is at risk. Chapter 13 uses a court-approved repayment plan, generally lasting three to five years, and requires enough regular income for a feasible plan. Timing and outcomes vary by court and case; use the comparison above to prepare questions for a qualified bankruptcy professional.</p>
 
     <h3>Bankruptcy Alternatives to Consider First</h3>
-    <p>Before filing, consider alternatives: (1) Debt negotiation — many creditors will accept 30–60 cents on the dollar for lump-sum settlement, especially after default; (2) Debt management plans through nonprofit credit counseling agencies, which reduce interest to 6–8% and consolidate payments; (3) Debt consolidation loans if you have adequate credit; (4) Negotiating directly with creditors for hardship programs. The 2026 bankruptcy filing surge — driven by elevated interest rates, persistent inflation, and post-pandemic debt accumulation — means you are far from alone. Bankruptcy's 7–10 year credit impact is significant, but for genuinely unmanageable debt it can be the most practical path to a fresh financial start. Many bankruptcy attorneys offer free initial consultations.</p>
+    <p>Possible alternatives include asking creditors about hardship programs, speaking with a nonprofit credit counselor about a debt-management plan, or discussing settlement and consolidation risks with an independent professional. Terms, tax consequences, credit effects, and eligibility vary. Required pre-filing counseling is not the same as individualized legal advice, and no alternative is right for every household.</p>
   </div>
 
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5522299769790775" data-ad-slot="5890228291" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -312,27 +335,27 @@
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How much does it cost to file Chapter 7 bankruptcy? <span class="arrow">▼</span></button>
-      <div class="faq-a">Chapter 7 bankruptcy typically costs $1,500–$4,500 total in 2026. The court filing fee is $338 (set by federal law), required credit counseling and debtor education courses add another $50–$100, and attorney fees generally run $1,000–$3,500 depending on your state and case complexity. In major metro areas like New York, Los Angeles, and Chicago, attorney fees commonly reach $1,500–$2,500 for a straightforward case.</div>
+      <div class="faq-a">The federal court filing fee for Chapter 7 is $338. Attorney and required-course costs vary by provider, location, and case complexity. Some qualifying individuals may request installments or a fee waiver. Confirm the current fee and eligibility rules with the U.S. Courts before filing.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What's the difference between Chapter 7 and Chapter 13? <span class="arrow">▼</span></button>
-      <div class="faq-a">Chapter 13 typically costs $4,000–$8,000 total, with attorney fees of $2,500–$5,000 being the largest variable. The court filing fee is $313, and required counseling courses add roughly $50–$100. The good news: most Chapter 13 attorney fees are paid through your 3–5 year repayment plan, so you typically need only a $200–$500 deposit upfront to get the case filed.</div>
+      <div class="faq-a">Chapter 7 is a liquidation process that may discharge qualifying debts; eligibility and exemptions determine whether property is at risk. Chapter 13 uses a court-approved repayment plan, generally lasting three to five years. The better fit depends on income, debts, property, goals, and local law.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">How long does bankruptcy stay on my credit report? <span class="arrow">▼</span></button>
-      <div class="faq-a">Low-income filers may qualify to have the $338 Chapter 7 filing fee waived entirely if household income is below 150% of the federal poverty level — roughly $21,870 for a single person or $45,000 for a family of four in 2026. Fee waivers are not available in Chapter 13 cases, but the filing fee can be paid in installments through the court. Credit counseling course fees can also be waived for eligible low-income filers.</div>
+      <div class="faq-a">A bankruptcy can remain on a credit report for years; Chapter 7 may be reported for up to 10 years and Chapter 13 for up to 7 years. The score impact and recovery timeline depend on the person's credit history and later activity, so a calculator cannot predict a specific point change.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">What debts are NOT discharged in bankruptcy? <span class="arrow">▼</span></button>
-      <div class="faq-a">Chapter 7 eliminates most unsecured debt (credit cards, medical bills, personal loans) in approximately 3–6 months through a liquidation process. Chapter 13 is a 3–5 year repayment plan that lets you keep assets like a home or car while catching up on missed payments. Chapter 7 is less expensive upfront but requires passing a means test; Chapter 13 has no income limit but costs more overall in attorney and trustee fees.</div>
+      <div class="faq-a">Bankruptcy does NOT eliminate: student loans (except in rare cases of extreme hardship), recent tax debts (generally past 3 years), child support and alimony obligations, debts from fraud or intentional wrongdoing, criminal fines and restitution, and debts from drunk driving accidents. Secured debts (mortgage, car loan) can be discharged, but you lose the collateral (home, car) unless you reaffirm or redeem the debt. Social Security overpayments and government fines are also generally non-dischargeable.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Can I file bankruptcy without an attorney? <span class="arrow">▼</span></button>
-      <div class="faq-a">Bankruptcy affects your credit score significantly — Chapter 7 stays on your credit report for 10 years, while Chapter 13 stays for 7 years. However, many filers see credit score improvements within 12–24 months of discharge as the debt-to-income ratio improves and they rebuild with secured credit cards. Consulting a licensed bankruptcy attorney is advisable to understand how filing might affect your specific financial situation.</div>
+      <div class="faq-a">Yes — filing "pro se" (without an attorney) is legal. However, bankruptcy paperwork is complex, and errors can result in dismissal, denial of discharge, or worse. Studies show pro se filers have significantly higher rates of case dismissal. For simple Chapter 7 cases with few assets and straightforward debt, pro se may be feasible with careful research. For Chapter 13, any business assets, significant property, or complex income situations, an attorney is strongly advised. Many bankruptcy attorneys offer free initial consultations.</div>
     </div>
   </div>
 
@@ -422,13 +445,13 @@
     <li><strong>Total typical Chapter 7 cost:</strong> <strong>$1,600–$2,700</strong></li>
     <li>Chapter 13 total is higher — attorney fees of $3,000–$5,000, but often paid through the repayment plan</li>
   </ul>
-  <p style="margin:10px 0 0;font-size:0.82rem;color:#4d7c5e;">Sources: U.S. Courts fee schedule (uscourts.gov), Clio Legal Trends Report 2026, National Law Journal attorney billing survey. Costs vary significantly by metro area.</p>
+  <p style="margin:10px 0 0;font-size:0.82rem;color:#4d7c5e;">Fixed filing fees: U.S. Courts. Attorney fees are broad market planning ranges and vary significantly by location, provider, and case complexity.</p>
 </div>
 
 <!-- Methodology Section -->
 <div id="methodology" style="background:#fff;border:1px solid var(--border, #e5e7eb);border-radius:8px;padding:20px 24px;max-width:700px;margin:0 auto 28px;">
   <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 12px;">🔬 Methodology</h2>
-  <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0 0 10px;">This calculator uses fixed federal filing fees from the <strong>U.S. Courts fee schedule (uscourts.gov)</strong>, current as of August 2026. Attorney fee ranges are derived from the <strong>Clio Legal Trends Report 2026</strong> and the <strong>National Law Journal's annual attorney billing survey</strong>, normalized by region using Clio's metro multipliers. Credit counseling and debtor education fees reflect the EOUST-approved agency fee range ($20–$100 per course, income-scaled).</p>
+  <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0 0 10px;">Fixed filing charges are checked against the <a href="https://www.uscourts.gov/court-programs/fees/bankruptcy-court-miscellaneous-fee-schedule" rel="noopener">U.S. Courts bankruptcy fee schedule</a>. Attorney fees and course costs are variable planning ranges, not official prices; compare them with written quotes and the Justice Department's <a href="https://www.justice.gov/ust/credit-counseling-debtor-education-information" rel="noopener">approved provider information</a>.</p>
   <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0;">All calculations occur in your browser — no data is sent to any server. Results are estimates only; actual costs depend on your jurisdiction, case complexity, and attorney. Not legal advice.</p>
 </div>
 
@@ -452,6 +475,7 @@
 <footer>
   <p>&copy; 2026 FreeLegalIQ &nbsp;&middot;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/editorial-policy.html">Editorial Policy</a> &nbsp;&middot;&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/contact.html">Contact</a></p>
   <p style="margin-top:8px; font-size:0.78rem;">Estimates only. Not legal advice. Consult a licensed attorney in your state.</p>
+  <p><a href="/sources-and-methodology.html">Methodology &amp; Sources</a></p>
 </footer>
 
 <script>
