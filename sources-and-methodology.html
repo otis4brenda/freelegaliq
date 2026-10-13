@@ -8,13 +8,42 @@
   <link rel="canonical" href="https://freelegaliq.com/sources-and-methodology.html" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <style>
-    *,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;background:#f5f7fa;color:#1f2937;line-height:1.7}nav{background:#1a2744;padding:17px 24px;display:flex;gap:24px;align-items:center;justify-content:space-between}.logo{color:#fff;text-decoration:none;font-size:1.25rem;font-weight:800}.logo span{color:#c9a227}.nav-links{display:flex;gap:16px;flex-wrap:wrap}.nav-links a{color:#e5eaf2;text-decoration:none;font-size:.88rem}.hero{background:linear-gradient(145deg,#1a2744,#243460);color:#fff;padding:58px 24px;text-align:center}.hero h1{margin:0 0 10px;font-size:clamp(1.8rem,4vw,2.7rem)}.hero p{max-width:760px;margin:auto;color:#e5eaf2}.container{max-width:900px;margin:auto;padding:34px 20px}.card{background:#fff;border:1px solid #dce2ea;border-radius:14px;padding:28px;margin:0 0 22px;box-shadow:0 8px 28px rgba(26,39,68,.06)}h2{color:#1a2744;margin-top:0}h3{color:#243460;margin:24px 0 6px}a{color:#245c9c}.notice{border-left:4px solid #b8891e;background:#f8f2df;padding:15px 17px;border-radius:8px}.source-list li{margin:9px 0}.review-line{font-size:.86rem;color:#5f6b7a}footer{background:#0f1a30;color:#aeb7c6;text-align:center;padding:28px 20px}footer a{color:#dce2ea}@media(max-width:640px){nav{align-items:flex-start;flex-direction:column;gap:10px}.nav-links{overflow-x:auto;width:100%;flex-wrap:nowrap;padding-bottom:4px}}
+    *,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;background:#f5f7fa;color:#1f2937;line-height:1.7}.logo{color:#fff;text-decoration:none;font-size:1.25rem;font-weight:800}.logo span{color:#c9a227}.hero{background:linear-gradient(145deg,#1a2744,#243460);color:#fff;padding:58px 24px;text-align:center}.hero h1{margin:0 0 10px;font-size:clamp(1.8rem,4vw,2.7rem)}.hero p{max-width:760px;margin:auto;color:#e5eaf2}.container{max-width:900px;margin:auto;padding:34px 20px}.card{background:#fff;border:1px solid #dce2ea;border-radius:14px;padding:28px;margin:0 0 22px;box-shadow:0 8px 28px rgba(26,39,68,.06)}h2{color:#1a2744;margin-top:0}h3{color:#243460;margin:24px 0 6px}a{color:#245c9c}.notice{border-left:4px solid #b8891e;background:#f8f2df;padding:15px 17px;border-radius:8px}.source-list li{margin:9px 0}.review-line{font-size:.86rem;color:#5f6b7a}footer{background:#0f1a30;color:#aeb7c6;text-align:center;padding:28px 20px}footer a{color:#dce2ea}@media(max-width:640px){}
+      nav {
+      background: var(--primary);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 24px 4px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .nav-logo { display:flex; align-items:center; text-decoration:none; } .nav-logo img { display:block; height:48px; width:auto; }
+    .nav-links { display: flex; gap: 16px; flex-wrap: nowrap; overflow-x: auto; margin-top: 3px; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; } .nav-links::-webkit-scrollbar { display: none; } .nav-links a { white-space: nowrap; flex-shrink: 0; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.8rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
 <nav>
-  <a class="logo" href="/">FreeLegal<span>IQ</span></a>
-  <div class="nav-links"><a href="/">Calculators</a><a href="/blog/">Legal Guides</a><a href="/about.html">About</a><a href="/editorial-policy.html">Editorial Policy</a></div>
+  <a class="nav-logo" href="/"><img src="/images/logo.png" alt="FreeLegalIQ" style="height:48px;width:auto;display:block;"></a>
+  <div class="nav-links">
+    <a href="/divorce-cost-calculator.html">Divorce</a>
+    <a href="/dui-cost-calculator.html">DUI</a>
+    <a href="/personal-injury-settlement-calculator.html">Personal Injury</a>
+    <a href="/estate-planning-cost-calculator.html">Estate</a>
+    <a href="/llc-formation-cost-calculator.html">LLC</a>
+    <a href="/bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="/child-support-calculator.html">Child Support</a>
+    <a href="/speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="/immigration-fee-calculator.html">Immigration</a>
+    <a href="/small-claims-court-calculator.html">Small Claims</a>
+    <a href="/about.html">About</a>
+  </div>
 </nav>
 <header class="hero">
   <h1>Calculator Methodology &amp; Sources</h1>

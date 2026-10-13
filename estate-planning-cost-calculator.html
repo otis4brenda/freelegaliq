@@ -41,12 +41,6 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --primary: #1a2744; --primary-dark: #0f1a30; --accent: #c9a227; --bg: #f4f6fb; --card: #ffffff; --text: #1a2744; --muted: #6b7280; --border: #d8dde9; --radius: 12px; --shadow: 0 2px 16px rgba(26,39,68,0.08); }
     body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
-    nav { background: var(--primary); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
-    .nav-logo { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 14px; }
-    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--accent); }
     .page-hero {
       position: relative;
       overflow: hidden;
@@ -120,7 +114,24 @@
     footer { background: var(--primary-dark); color: #9ca3af; text-align: center; padding: 28px 24px; font-size: 0.85rem; margin-top: 48px; }
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: var(--accent); }
-    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .checkbox-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .checkbox-grid { grid-template-columns: 1fr; } }
+      nav {
+      background: var(--primary);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 24px 4px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .nav-logo { display:flex; align-items:center; text-decoration:none; } .nav-logo img { display:block; height:48px; width:auto; }
+    .nav-links { display: flex; gap: 16px; flex-wrap: nowrap; overflow-x: auto; margin-top: 3px; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; } .nav-links::-webkit-scrollbar { display: none; } .nav-links a { white-space: nowrap; flex-shrink: 0; }
+    .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.8rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
   </style>
   <!-- FAQPage Schema (AEO) -->
   <script type="application/ld+json">
@@ -231,19 +242,19 @@
 <body>
 
 <nav>
-  <a class="nav-logo" href="/">FreeLegal<span>IQ</span></a>
+  <a class="nav-logo" href="/"><img src="/images/logo.png" alt="FreeLegalIQ" style="height:48px;width:auto;display:block;"></a>
   <div class="nav-links">
-    <a href="divorce-cost-calculator.html">Divorce</a>
-    <a href="dui-cost-calculator.html">DUI</a>
-    <a href="personal-injury-settlement-calculator.html">Injury</a>
-    <a href="estate-planning-cost-calculator.html">Estate</a>
-    <a href="llc-formation-cost-calculator.html">LLC</a>
-    <a href="bankruptcy-cost-calculator.html">Bankruptcy</a>
-    <a href="child-support-calculator.html">Child Support</a>
-    <a href="speeding-ticket-cost-calculator.html">Tickets</a>
-    <a href="immigration-fee-calculator.html">Immigration</a>
-    <a href="small-claims-court-calculator.html">Small Claims</a>
-    <a href="about.html">About</a>
+    <a href="/divorce-cost-calculator.html">Divorce</a>
+    <a href="/dui-cost-calculator.html">DUI</a>
+    <a href="/personal-injury-settlement-calculator.html">Personal Injury</a>
+    <a href="/estate-planning-cost-calculator.html">Estate</a>
+    <a href="/llc-formation-cost-calculator.html">LLC</a>
+    <a href="/bankruptcy-cost-calculator.html">Bankruptcy</a>
+    <a href="/child-support-calculator.html">Child Support</a>
+    <a href="/speeding-ticket-cost-calculator.html">Tickets</a>
+    <a href="/immigration-fee-calculator.html">Immigration</a>
+    <a href="/small-claims-court-calculator.html">Small Claims</a>
+    <a href="/about.html">About</a>
   </div>
 </nav>
 
